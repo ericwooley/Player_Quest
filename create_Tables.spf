@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>ewooley</string>
+			<key>host</key>
+			<string>kirby.cs.sonoma.edu</string>
+			<key>kcid</key>
+			<string>-5441321683953069949</string>
+			<key>name</key>
+			<string>Kirby</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>ewooley</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>latin1</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClhlbmVteV9pZNIeHy0u
+			XxAPTlNNdXRhYmxlU3RyaW5noy0vI1hOU1N0cmluZ9IeHzEyXk5T
+			TXV0YWJsZUFycmF5ozEzI1dOU0FycmF50h4fIjWiIiNfEA9OU0tl
+			eWVkQXJjaGl2ZXLRODlUZGF0YYABAAgAEQAaACMALQAyADcARQBL
+			AFIAWgBlAGwAcAByAHQAdgB6AHwAfgCAAIIAhwCMAJEAugDBAMIA
+			wwDFAMoA1QDeAPQA+AEFAQ4BEwEVARcBGQEeASgBKgEzATgBSgFO
+			AVcBXAFrAW8BdwF8AX8BkQGUAZkAAAAAAAACAQAAAAAAAAA6AAAA
+			AAAAAAAAAAAAAAABmw==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {693, 456}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>DROP TABLE player;
+CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	player_name VARCHAR(100) NOT NULL UNIQUE,
+	player_id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (player_id)
+);
+
+CREATE TABLE IF NOT EXISTS cohorts (
+	cohort_id INT NOT NULL AUTO_INCREMENT,
+	cohort_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (cohort_id)
+	
+);
+
+CREATE TABLE IF NOT EXISTS player_party (
+	player_id INT, FOREIGN KEY(player_id) REFERENCES player,
+	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohort,
+	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (player_id, cohort_id)
+);
+
+CREATE TABLE IF NOT EXISTS enemy (
+	enemy_id INT NOT NULL AUTO_INCREMENT,
+	enemy_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (enemy_id)
+	
+);
+
+CREATE TABLE IF NOT EXISTS battle_log (
+	battle_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(battle_id),
+	enemy_id INT NOT NULL, FOREIGN KEY(enemy_id) REFERENCES enemy,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) REFERENCES player,
+	player_victorious BOOLEAN NOT NULL,
+	battle_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS quest (
+	quest_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (quest_id),
+	min_lvl INT NOT NULL,
+	quest_text varchar (2000) NOT NULL,
+	quest_name varchar (50) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS wearable_item (
+	wearable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(wearable_item_id),
+	wearable_item_name varchar(100) NOT NULL UNIQUE,
+	attack_bonus INT NOT NULL DEFAULT 0,
+	defense_bonus INT NOT NULL DEFAULT 0
+);
+
+DROP TABLE IF EXISTS wearable_item;
+
+
+CREATE TABLE IF NOT EXISTS players_wearable_items(
+	wearable_item_id INT NOT NULL, FOREIGN KEY (wearable_item_id) references wearable_item,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (wearable_item_id, player_id)
+);
+
+CREATE TABLE IF NOT EXISTS consumable_items (
+	consumable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (consumable_item_id),
+	damage INT NOT NULL DEFAULT 0,
+	mana_damage INT NOT NULL DEFAULT 0,
+	drop_chance INT NOT NULL DEFAULT 0,
+	consumable_item_name varchar(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS players_consumable_items(
+	consumable_item_id INT NOT NULL, FOREIGN KEY (consumable_item_id) references consumable_items,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (consumable_item_id, player_id)
+);
+</string>
+			<key>table</key>
+			<string>enemy</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>202</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>CREATE TABLE IF NOT EXISTS players_consumable_items(
+	consumable_item_id INT NOT NULL, FOREIGN KEY (consumable_item_id) references consumable_items,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (consumable_item_id, player_id)
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS consumable_items (
+	consumable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (consumable_item_id),
+	damage INT NOT NULL DEFAULT 0,
+	mana_damage INT NOT NULL DEFAULT 0,
+	drop_chance INT NOT NULL DEFAULT 0,
+	consumable_item_name varchar(100) NOT NULL UNIQUE
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS wearable_item (
+	wearable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(wearable_item_id),
+	wearable_item_name varchar(100) NOT NULL UNIQUE,
+	attack_bonus INT NOT NULL DEFAULT 0,
+	defense_bonus INT NOT NULL DEFAULT 0
+)</string>
+		<string>DROP TABLE IF EXISTS wearable_item</string>
+		<string>CREATE TABLE IF NOT EXISTS players_wearable_items(
+	wearable_item_id INT NOT NULL, FOREIGN KEY (wearable_item_id) references wearable_item,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (wearable_item_id, player_id)
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS players_wearable_items(
+	wearable_item_id INT NOT NULL, FOREIGN KEY (wearable_item_id) references wearable_item,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (wearable_item_id, player_id)</string>
+		<string>CREATE TABLE IF NOT EXISTS wearable_item (
+	wearable_item_id INT NOT NULL, PRIMARY KEY(wearable_item_id),
+	wearable_item_name varchar(100) NOT NULL UNIQUE,
+	attack_bonus INT NOT NULL DEFAULT 0,
+	defense_bonus INT NOT NULL DEFAULT 0
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS quest (
+	quest_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (quest_id),
+	min_lvl INT NOT NULL,
+	quest_text varchar (2000) NOT NULL,
+	quest_name varchar (50) NOT NULL
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS battle_log (
+	battle_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(battle_id),
+	enemy_id INT NOT NULL, FOREIGN KEY(enemy_id) REFERENCES enemy,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) REFERENCES player,
+	player_victorious BOOLEAN NOT NULL,
+	battle_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS enemy (
+	enemy_id INT NOT NULL AUTO_INCREMENT,
+	enemy_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (enemy_id)
+	
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS player_party (
+	player_id INT, FOREIGN KEY(player_id) REFERENCES player,
+	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohort,
+	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (player_id, cohort_id)
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS cohorts (
+	cohort_id INT NOT NULL AUTO_INCREMENT,
+	cohort_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (cohort_id)
+	
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	player_name VARCHAR(100) NOT NULL UNIQUE,
+	player_id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (player_id)
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	player_name VARCHAR(100) NOT NULL UNIQUE,
+	player_id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (id)
+)</string>
+		<string>DROP TABLE player</string>
+		<string>CREATE TABLE IF NOT EXISTS cohorts (
+	id INT NOT NULL AUTO_INCREMENT,
+	cohort_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (id)
+	
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	player_name VARCHAR(100) NOT NULL UNIQUE,
+	id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (id)
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL
+	player_name VARCHAR(100) NOT NULL,
+	id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (id),
+	UNIQUE (player_name)
+	
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL
+	player_name VARCHAR(100) NOT NULL,
+	id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY(id),
+	UNIQUE (player_name)
+	
+)</string>
+		<string>CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL
+	player_name VARCHAR(100) NOT NULL,
+	id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY(id)
+	
+)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.1.67</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
