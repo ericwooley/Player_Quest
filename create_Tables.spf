@@ -11,7 +11,7 @@
 		<key>connection</key>
 		<dict>
 			<key>database</key>
-			<string>ewooley</string>
+			<string>Player_Quest</string>
 			<key>host</key>
 			<string>kirby.cs.sonoma.edu</string>
 			<key>kcid</key>
@@ -54,23 +54,33 @@
 			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
 			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
 			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
-			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClhlbmVteV9pZNIeHy0u
-			XxAPTlNNdXRhYmxlU3RyaW5noy0vI1hOU1N0cmluZ9IeHzEyXk5T
-			TXV0YWJsZUFycmF5ozEzI1dOU0FycmF50h4fIjWiIiNfEA9OU0tl
-			eWVkQXJjaGl2ZXLRODlUZGF0YYABAAgAEQAaACMALQAyADcARQBL
-			AFIAWgBlAGwAcAByAHQAdgB6AHwAfgCAAIIAhwCMAJEAugDBAMIA
-			wwDFAMoA1QDeAPQA+AEFAQ4BEwEVARcBGQEeASgBKgEzATgBSgFO
-			AVcBXAFrAW8BdwF8AX8BkQGUAZkAAAAAAAACAQAAAAAAAAA6AAAA
-			AAAAAAAAAAAAAAABmw==
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeACl8QEmNvbnN1bWFibGVf
+			aXRlbV9pZNIeHy0uXxAPTlNNdXRhYmxlU3RyaW5noy0vI1hOU1N0
+			cmluZ9IeHzEyXk5TTXV0YWJsZUFycmF5ozEzI1dOU0FycmF50h4f
+			IjWiIiNfEA9OU0tleWVkQXJjaGl2ZXLRODlUZGF0YYABAAgAEQAa
+			ACMALQAyADcARQBLAFIAWgBlAGwAcAByAHQAdgB6AHwAfgCAAIIA
+			hwCMAJEAugDBAMIAwwDFAMoA1QDeAPQA+AEFAQ4BEwEVARcBGQEe
+			ASgBKgE/AUQBVgFaAWMBaAF3AXsBgwGIAYsBnQGgAaUAAAAAAAAC
+			AQAAAAAAAAA6AAAAAAAAAAAAAAAAAAABpw==
 			</data>
 			<key>contentSortColIsAsc</key>
 			<true/>
 			<key>contentViewport</key>
-			<string>{{0, 0}, {693, 456}}</string>
+			<string>{{0, 0}, {1477, 873}}</string>
 			<key>isToolbarVisible</key>
 			<true/>
 			<key>queries</key>
-			<string>DROP TABLE player;
+			<string>DROP TABLE IF EXISTS player;
+DROP TABLE IF EXISTS cohorts;
+DROP TABLE IF EXISTS player_party;
+DROP TABLE IF EXISTS enemy;
+DROP TABLE IF EXISTS battle_log;
+DROP TABLE IF EXISTS quest;
+DROP TABLE IF EXISTS wearable_item;
+DROP TABLE IF EXISTS players_wearable_items;
+DROP TABLE IF EXISTS consumable_items;
+DROP TABLE IF EXISTS players_consumable_items;
+
 CREATE TABLE IF NOT EXISTS player (
 	mana INT NOT NULL,
 	health INT NOT NULL,
@@ -80,7 +90,8 @@ CREATE TABLE IF NOT EXISTS player (
 	player_name VARCHAR(100) NOT NULL UNIQUE,
 	player_id INT NOT NULL AUTO_INCREMENT, 
 	PRIMARY KEY (player_id)
-);
+) ENGINE=innoDB ;
+
 
 CREATE TABLE IF NOT EXISTS cohorts (
 	cohort_id INT NOT NULL AUTO_INCREMENT,
@@ -91,14 +102,15 @@ CREATE TABLE IF NOT EXISTS cohorts (
 	defense INT NOT NULL,
 	PRIMARY KEY (cohort_id)
 	
-);
+)ENGINE=innoDB;
 
 CREATE TABLE IF NOT EXISTS player_party (
 	player_id INT, FOREIGN KEY(player_id) REFERENCES player,
-	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohort,
+	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohorts,
 	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (player_id, cohort_id)
-);
+)ENGINE=innoDB;
+
 
 CREATE TABLE IF NOT EXISTS enemy (
 	enemy_id INT NOT NULL AUTO_INCREMENT,
@@ -109,7 +121,9 @@ CREATE TABLE IF NOT EXISTS enemy (
 	defense INT NOT NULL,
 	PRIMARY KEY (enemy_id)
 	
-);
+)ENGINE=innoDB;
+
+
 
 CREATE TABLE IF NOT EXISTS battle_log (
 	battle_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(battle_id),
@@ -117,14 +131,16 @@ CREATE TABLE IF NOT EXISTS battle_log (
 	player_id INT NOT NULL, FOREIGN KEY (player_id) REFERENCES player,
 	player_victorious BOOLEAN NOT NULL,
 	battle_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+)ENGINE=innoDB;
+
 
 CREATE TABLE IF NOT EXISTS quest (
 	quest_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (quest_id),
 	min_lvl INT NOT NULL,
 	quest_text varchar (2000) NOT NULL,
 	quest_name varchar (50) NOT NULL
-);
+)ENGINE=innoDB;
+
 
 CREATE TABLE IF NOT EXISTS wearable_item (
 	wearable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(wearable_item_id),
@@ -133,15 +149,14 @@ CREATE TABLE IF NOT EXISTS wearable_item (
 	defense_bonus INT NOT NULL DEFAULT 0
 );
 
-DROP TABLE IF EXISTS wearable_item;
-
 
 CREATE TABLE IF NOT EXISTS players_wearable_items(
 	wearable_item_id INT NOT NULL, FOREIGN KEY (wearable_item_id) references wearable_item,
 	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
 	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (wearable_item_id, player_id)
-);
+)ENGINE=innoDB;
+
 
 CREATE TABLE IF NOT EXISTS consumable_items (
 	consumable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (consumable_item_id),
@@ -149,17 +164,16 @@ CREATE TABLE IF NOT EXISTS consumable_items (
 	mana_damage INT NOT NULL DEFAULT 0,
 	drop_chance INT NOT NULL DEFAULT 0,
 	consumable_item_name varchar(100) NOT NULL UNIQUE
-);
+)ENGINE=innoDB;
+
 
 CREATE TABLE IF NOT EXISTS players_consumable_items(
 	consumable_item_id INT NOT NULL, FOREIGN KEY (consumable_item_id) references consumable_items,
 	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
 	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (consumable_item_id, player_id)
-);
+)ENGINE=innoDB;
 </string>
-			<key>table</key>
-			<string>enemy</string>
 			<key>view</key>
 			<string>SP_VIEW_CUSTOMQUERY</string>
 			<key>windowVerticalDividerPosition</key>
@@ -174,6 +188,292 @@ CREATE TABLE IF NOT EXISTS players_consumable_items(
 	<array/>
 	<key>queryHistory</key>
 	<array>
+		<string>DROP TABLE IF EXISTS player;
+DROP TABLE IF EXISTS cohorts;
+DROP TABLE IF EXISTS player_party;
+DROP TABLE IF EXISTS enemy;
+DROP TABLE IF EXISTS battle_log;
+DROP TABLE IF EXISTS quest;
+DROP TABLE IF EXISTS wearable_item;
+DROP TABLE IF EXISTS players_wearable_items;
+DROP TABLE IF EXISTS consumable_items;
+DROP TABLE IF EXISTS players_consumable_items;
+CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	player_name VARCHAR(100) NOT NULL UNIQUE,
+	player_id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (player_id)
+) ENGINE=innoDB;
+CREATE TABLE IF NOT EXISTS cohorts (
+	cohort_id INT NOT NULL AUTO_INCREMENT,
+	cohort_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (cohort_id)
+	
+)ENGINE=innoDB;
+CREATE TABLE IF NOT EXISTS player_party (
+	player_id INT, FOREIGN KEY(player_id) REFERENCES player,
+	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohorts,
+	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (player_id, cohort_id)
+)ENGINE=innoDB</string>
+		<string>CREATE TABLE IF NOT EXISTS player_party (
+	player_id INT, FOREIGN KEY(player_id) REFERENCES player,
+	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohorts,
+	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (player_id, cohort_id)
+)ENGINE=innoDB</string>
+		<string>DROP TABLE IF EXISTS player;
+DROP TABLE IF EXISTS cohorts;
+DROP TABLE IF EXISTS player_party;
+DROP TABLE IF EXISTS enemy;
+DROP TABLE IF EXISTS battle_log;
+DROP TABLE IF EXISTS quest;
+DROP TABLE IF EXISTS wearable_item;
+DROP TABLE IF EXISTS players_wearable_items;
+DROP TABLE IF EXISTS consumable_items;
+DROP TABLE IF EXISTS players_consumable_items;
+CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	player_name VARCHAR(100) NOT NULL UNIQUE,
+	player_id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (player_id)
+) ENGINE=innoDB;
+CREATE TABLE IF NOT EXISTS cohorts (
+	cohort_id INT NOT NULL AUTO_INCREMENT,
+	cohort_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (cohort_id)
+	
+)ENGINE=innoDB;
+CREATE TABLE IF NOT EXISTS player_party (
+	player_id INT, FOREIGN KEY(player_id) REFERENCES player,
+	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohort,
+	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (player_id, cohort_id)
+)ENGINE=innoDB</string>
+		<string>DROP TABLE IF EXISTS consumable_items</string>
+		<string>DROP TABLE IF EXISTS wearable_item</string>
+		<string>DROP TABLE IF EXISTS quest</string>
+		<string>DROP TABLE IF EXISTS battle_log</string>
+		<string>DROP TABLE IF EXISTS enemy</string>
+		<string>DROP TABLE IF EXISTS player_party</string>
+		<string>DROP TABLE IF EXISTS cohorts</string>
+		<string>DROP TABLE IF EXISTS player</string>
+		<string>DROP TABLE IF EXISTS player;
+CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	player_name VARCHAR(100) NOT NULL UNIQUE,
+	player_id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (player_id)
+) ENGINE=innoDB;
+DROP TABLE IF EXISTS cohorts;
+CREATE TABLE IF NOT EXISTS cohorts (
+	cohort_id INT NOT NULL AUTO_INCREMENT,
+	cohort_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (cohort_id)
+	
+)ENGINE=innoDB;
+DROP TABLE IF EXISTS player_party;
+CREATE TABLE IF NOT EXISTS player_party (
+	player_id INT, FOREIGN KEY(player_id) REFERENCES player,
+	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohort,
+	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (player_id, cohort_id)
+)ENGINE=innoDB;
+DROP TABLE IF EXISTS enemy;
+CREATE TABLE IF NOT EXISTS enemy (
+	enemy_id INT NOT NULL AUTO_INCREMENT,
+	enemy_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (enemy_id)
+	
+)ENGINE=innoDB;
+DROP TABLE IF EXISTS `battle_log`;
+CREATE TABLE IF NOT EXISTS battle_log (
+	battle_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(battle_id),
+	enemy_id INT NOT NULL, FOREIGN KEY(enemy_id) REFERENCES enemy,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) REFERENCES player,
+	player_victorious BOOLEAN NOT NULL,
+	battle_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)ENGINE=innoDB;
+DROP TABLE IF EXISTS quest;
+CREATE TABLE IF NOT EXISTS quest (
+	quest_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (quest_id),
+	min_lvl INT NOT NULL,
+	quest_text varchar (2000) NOT NULL,
+	quest_name varchar (50) NOT NULL
+)ENGINE=innoDB;
+DROP TABLE IF EXISTS `wearable_item`;
+CREATE TABLE IF NOT EXISTS wearable_item (
+	wearable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(wearable_item_id),
+	wearable_item_name varchar(100) NOT NULL UNIQUE,
+	attack_bonus INT NOT NULL DEFAULT 0,
+	defense_bonus INT NOT NULL DEFAULT 0
+);
+DROP TABLE IF EXISTS `players_wearable_items`;
+CREATE TABLE IF NOT EXISTS players_wearable_items(
+	wearable_item_id INT NOT NULL, FOREIGN KEY (wearable_item_id) references wearable_item,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (wearable_item_id, player_id)
+)ENGINE=innoDB;
+DROP TABLE IF EXISTS `consumable_items`;
+CREATE TABLE IF NOT EXISTS consumable_items (
+	consumable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (consumable_item_id),
+	damage INT NOT NULL DEFAULT 0,
+	mana_damage INT NOT NULL DEFAULT 0,
+	drop_chance INT NOT NULL DEFAULT 0,
+	consumable_item_name varchar(100) NOT NULL UNIQUE
+)ENGINE=innoDB;
+DROP TABLE IF EXISTS `players_consumable_items`;
+CREATE TABLE IF NOT EXISTS players_consumable_items(
+	consumable_item_id INT NOT NULL, FOREIGN KEY (consumable_item_id) references consumable_items,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (consumable_item_id, player_id)
+)ENGINE=innoDB</string>
+		<string>DROP TABLE IF EXISTS player;
+CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	player_name VARCHAR(100) NOT NULL UNIQUE,
+	player_id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (player_id)
+) ENGINE=innoDB;
+DROP TABLE IF EXISTS cohorts;
+CREATE TABLE IF NOT EXISTS cohorts (
+	cohort_id INT NOT NULL AUTO_INCREMENT,
+	cohort_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (cohort_id)
+	
+)ENGINE=innoDB;
+DROP TABLE IF EXISTS player_party;
+CREATE TABLE IF NOT EXISTS player_party (
+	player_id INT, FOREIGN KEY(player_id) REFERENCES player,
+	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohort,
+	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (player_id, cohort_id)
+)ENGINE=innoDB</string>
+		<string>CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	player_name VARCHAR(100) NOT NULL UNIQUE,
+	player_id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (player_id)
+) ENGINE=innoDB</string>
+		<string>DROP TABLE IF EXISTS player;
+CREATE TABLE IF NOT EXISTS player (
+	mana INT NOT NULL,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	player_name VARCHAR(100) NOT NULL UNIQUE,
+	player_id INT NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY (player_id)
+);
+CREATE TABLE IF NOT EXISTS cohorts (
+	cohort_id INT NOT NULL AUTO_INCREMENT,
+	cohort_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (cohort_id)
+	
+);
+CREATE TABLE IF NOT EXISTS player_party (
+	player_id INT, FOREIGN KEY(player_id) REFERENCES player,
+	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohort,
+	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (player_id, cohort_id)
+);
+CREATE TABLE IF NOT EXISTS enemy (
+	enemy_id INT NOT NULL AUTO_INCREMENT,
+	enemy_name varchar(100) NOT NULL UNIQUE,
+	health INT NOT NULL,
+	lvl INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	PRIMARY KEY (enemy_id)
+	
+);
+CREATE TABLE IF NOT EXISTS battle_log (
+	battle_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(battle_id),
+	enemy_id INT NOT NULL, FOREIGN KEY(enemy_id) REFERENCES enemy,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) REFERENCES player,
+	player_victorious BOOLEAN NOT NULL,
+	battle_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS quest (
+	quest_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (quest_id),
+	min_lvl INT NOT NULL,
+	quest_text varchar (2000) NOT NULL,
+	quest_name varchar (50) NOT NULL
+);
+CREATE TABLE IF NOT EXISTS wearable_item (
+	wearable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(wearable_item_id),
+	wearable_item_name varchar(100) NOT NULL UNIQUE,
+	attack_bonus INT NOT NULL DEFAULT 0,
+	defense_bonus INT NOT NULL DEFAULT 0
+);
+DROP TABLE IF EXISTS wearable_item;
+CREATE TABLE IF NOT EXISTS players_wearable_items(
+	wearable_item_id INT NOT NULL, FOREIGN KEY (wearable_item_id) references wearable_item,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (wearable_item_id, player_id)
+);
+CREATE TABLE IF NOT EXISTS consumable_items (
+	consumable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (consumable_item_id),
+	damage INT NOT NULL DEFAULT 0,
+	mana_damage INT NOT NULL DEFAULT 0,
+	drop_chance INT NOT NULL DEFAULT 0,
+	consumable_item_name varchar(100) NOT NULL UNIQUE
+);
+CREATE TABLE IF NOT EXISTS players_consumable_items(
+	consumable_item_id INT NOT NULL, FOREIGN KEY (consumable_item_id) references consumable_items,
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (consumable_item_id, player_id)
+)</string>
+		<string>DROP TABLE player</string>
 		<string>CREATE TABLE IF NOT EXISTS players_consumable_items(
 	consumable_item_id INT NOT NULL, FOREIGN KEY (consumable_item_id) references consumable_items,
 	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
@@ -193,138 +493,11 @@ CREATE TABLE IF NOT EXISTS players_consumable_items(
 	attack_bonus INT NOT NULL DEFAULT 0,
 	defense_bonus INT NOT NULL DEFAULT 0
 )</string>
-		<string>DROP TABLE IF EXISTS wearable_item</string>
 		<string>CREATE TABLE IF NOT EXISTS players_wearable_items(
 	wearable_item_id INT NOT NULL, FOREIGN KEY (wearable_item_id) references wearable_item,
 	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
 	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (wearable_item_id, player_id)
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS players_wearable_items(
-	wearable_item_id INT NOT NULL, FOREIGN KEY (wearable_item_id) references wearable_item,
-	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
-	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	PRIMARY KEY (wearable_item_id, player_id)</string>
-		<string>CREATE TABLE IF NOT EXISTS wearable_item (
-	wearable_item_id INT NOT NULL, PRIMARY KEY(wearable_item_id),
-	wearable_item_name varchar(100) NOT NULL UNIQUE,
-	attack_bonus INT NOT NULL DEFAULT 0,
-	defense_bonus INT NOT NULL DEFAULT 0
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS quest (
-	quest_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (quest_id),
-	min_lvl INT NOT NULL,
-	quest_text varchar (2000) NOT NULL,
-	quest_name varchar (50) NOT NULL
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS battle_log (
-	battle_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(battle_id),
-	enemy_id INT NOT NULL, FOREIGN KEY(enemy_id) REFERENCES enemy,
-	player_id INT NOT NULL, FOREIGN KEY (player_id) REFERENCES player,
-	player_victorious BOOLEAN NOT NULL,
-	battle_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS enemy (
-	enemy_id INT NOT NULL AUTO_INCREMENT,
-	enemy_name varchar(100) NOT NULL UNIQUE,
-	health INT NOT NULL,
-	lvl INT NOT NULL,
-	attack INT NOT NULL,
-	defense INT NOT NULL,
-	PRIMARY KEY (enemy_id)
-	
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS player_party (
-	player_id INT, FOREIGN KEY(player_id) REFERENCES player,
-	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohort,
-	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	PRIMARY KEY (player_id, cohort_id)
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS cohorts (
-	cohort_id INT NOT NULL AUTO_INCREMENT,
-	cohort_name varchar(100) NOT NULL UNIQUE,
-	health INT NOT NULL,
-	lvl INT NOT NULL,
-	attack INT NOT NULL,
-	defense INT NOT NULL,
-	PRIMARY KEY (cohort_id)
-	
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS player (
-	mana INT NOT NULL,
-	health INT NOT NULL,
-	lvl INT NOT NULL,
-	attack INT NOT NULL,
-	defense INT NOT NULL,
-	player_name VARCHAR(100) NOT NULL UNIQUE,
-	player_id INT NOT NULL AUTO_INCREMENT, 
-	PRIMARY KEY (player_id)
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS player (
-	mana INT NOT NULL,
-	health INT NOT NULL,
-	lvl INT NOT NULL,
-	attack INT NOT NULL,
-	defense INT NOT NULL,
-	player_name VARCHAR(100) NOT NULL UNIQUE,
-	player_id INT NOT NULL AUTO_INCREMENT, 
-	PRIMARY KEY (id)
-)</string>
-		<string>DROP TABLE player</string>
-		<string>CREATE TABLE IF NOT EXISTS cohorts (
-	id INT NOT NULL AUTO_INCREMENT,
-	cohort_name varchar(100) NOT NULL UNIQUE,
-	health INT NOT NULL,
-	lvl INT NOT NULL,
-	attack INT NOT NULL,
-	defense INT NOT NULL,
-	PRIMARY KEY (id)
-	
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS player (
-	mana INT NOT NULL,
-	health INT NOT NULL,
-	lvl INT NOT NULL,
-	attack INT NOT NULL,
-	defense INT NOT NULL,
-	player_name VARCHAR(100) NOT NULL UNIQUE,
-	id INT NOT NULL AUTO_INCREMENT, 
-	PRIMARY KEY (id)
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS player (
-	mana INT NOT NULL,
-	health INT NOT NULL,
-	lvl INT NOT NULL,
-	attack INT NOT NULL,
-	defense INT NOT NULL
-	player_name VARCHAR(100) NOT NULL,
-	id INT NOT NULL AUTO_INCREMENT, 
-	PRIMARY KEY (id),
-	UNIQUE (player_name)
-	
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS player (
-	mana INT NOT NULL,
-	health INT NOT NULL,
-	lvl INT NOT NULL,
-	attack INT NOT NULL,
-	defense INT NOT NULL
-	player_name VARCHAR(100) NOT NULL,
-	id INT NOT NULL AUTO_INCREMENT, 
-	PRIMARY KEY(id),
-	UNIQUE (player_name)
-	
-)</string>
-		<string>CREATE TABLE IF NOT EXISTS player (
-	mana INT NOT NULL,
-	health INT NOT NULL,
-	lvl INT NOT NULL,
-	attack INT NOT NULL,
-	defense INT NOT NULL
-	player_name VARCHAR(100) NOT NULL,
-	id INT NOT NULL AUTO_INCREMENT, 
-	PRIMARY KEY(id)
-	
 )</string>
 	</array>
 	<key>rdbms_type</key>
