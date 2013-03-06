@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS player;
-DROP TABLE IF EXISTS cohorts;
+DROP TABLE IF EXISTS cohort;
 DROP TABLE IF EXISTS player_party;
 DROP TABLE IF EXISTS enemy;
 DROP TABLE IF EXISTS battle_log;
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS player (
 )   ;
 
 
-CREATE TABLE IF NOT EXISTS cohorts (
+CREATE TABLE IF NOT EXISTS cohort (
 	id INT NOT NULL AUTO_INCREMENT,
 	cohort_name varchar(100) NOT NULL UNIQUE,
 	health INT NOT NULL,
@@ -29,17 +29,20 @@ CREATE TABLE IF NOT EXISTS cohorts (
 	attack INT NOT NULL,
 	defense INT NOT NULL,
 	PRIMARY KEY (id)
-	
 ) ;
 
+-- How I made it
 CREATE TABLE IF NOT EXISTS player_party (
 	player_id INT,
 	cohort_id INT,
 	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (player_id, cohort_id)
+	,INDEX `fk_player_has_cohort_cohort1_idx` (`cohort_id` ASC)
+	,INDEX `fk_player_has_cohort_player_idx` (`player_id` ASC) 
 );
 ALTER TABLE player_party ADD CONSTRAINT player_id_ref_player FOREIGN KEY (player_id) REFERENCES player(id);
 ALTER TABLE player_party ADD CONSTRAINT cohort_id_ref_cohort FOREIGN KEY (cohort_id) REFERENCES cohort(id);
+
 
 CREATE TABLE IF NOT EXISTS enemy (
 	id INT NOT NULL AUTO_INCREMENT,
