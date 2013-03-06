@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS player (
 	player_name VARCHAR(100) NOT NULL UNIQUE,
 	id INT NOT NULL AUTO_INCREMENT, 
 	PRIMARY KEY (id)
-)   ;
+);
 
 
 CREATE TABLE IF NOT EXISTS cohort (
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS cohort (
 	attack INT NOT NULL,
 	defense INT NOT NULL,
 	PRIMARY KEY (id)
-) ;
+);
 
 -- How I made it
 CREATE TABLE IF NOT EXISTS player_party (
@@ -52,10 +52,7 @@ CREATE TABLE IF NOT EXISTS enemy (
 	attack INT NOT NULL,
 	defense INT NOT NULL,
 	PRIMARY KEY (id)
-	
-) ;
-
-
+);
 
 CREATE TABLE IF NOT EXISTS battle_log (
 	battle_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(battle_id),
@@ -63,7 +60,7 @@ CREATE TABLE IF NOT EXISTS battle_log (
 	player_id INT NOT NULL, FOREIGN KEY (player_id) REFERENCES player(id),
 	player_victorious BOOLEAN NOT NULL,
 	battle_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-) ;
+);
 
 
 CREATE TABLE IF NOT EXISTS quest (
@@ -71,7 +68,7 @@ CREATE TABLE IF NOT EXISTS quest (
 	min_lvl INT NOT NULL,
 	quest_text varchar (2000) NOT NULL,
 	quest_name varchar (50) NOT NULL
-) ;
+);
 
 
 CREATE TABLE IF NOT EXISTS wearable_item (
@@ -87,7 +84,7 @@ CREATE TABLE IF NOT EXISTS players_wearable_items(
 	player_id INT NOT NULL, FOREIGN KEY (player_id) references player(id),
 	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (wearable_item_id, player_id)
-) ;
+);
 
 
 CREATE TABLE IF NOT EXISTS consumable_items (
@@ -96,7 +93,7 @@ CREATE TABLE IF NOT EXISTS consumable_items (
 	mana_damage INT NOT NULL DEFAULT 0,
 	drop_chance INT NOT NULL DEFAULT 0,
 	consumable_item_name varchar(100) NOT NULL UNIQUE
-) ;
+);
 
 
 CREATE TABLE IF NOT EXISTS players_consumable_items(
@@ -104,4 +101,4 @@ CREATE TABLE IF NOT EXISTS players_consumable_items(
 	player_id INT NOT NULL, FOREIGN KEY (player_id) references player(id),
 	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (consumable_item_id, player_id)
-) ;
+);
