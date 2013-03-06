@@ -33,21 +33,22 @@ CREATE TABLE IF NOT EXISTS cohorts (
 ) ;
 
 CREATE TABLE IF NOT EXISTS player_party (
-	player_id INT, FOREIGN KEY(player_id) REFERENCES player(id),
-	cohort_id INT, FOREIGN KEY(cohort_id) REFERENCES cohorts(id),
+	player_id INT,
+	cohort_id INT,
 	join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (player_id, cohort_id)
 );
-
+ALTER TABLE player_party ADD CONSTRAINT player_id_ref_player FOREIGN KEY (player_id) REFERENCES player(id);
+ALTER TABLE player_party ADD CONSTRAINT cohort_id_ref_cohort FOREIGN KEY (cohort_id) REFERENCES cohort(id);
 
 CREATE TABLE IF NOT EXISTS enemy (
-	enemy_id INT NOT NULL AUTO_INCREMENT,
+	id INT NOT NULL AUTO_INCREMENT,
 	enemy_name varchar(100) NOT NULL UNIQUE,
 	health INT NOT NULL,
 	lvl INT NOT NULL,
 	attack INT NOT NULL,
 	defense INT NOT NULL,
-	PRIMARY KEY (enemy_id)
+	PRIMARY KEY (id)
 	
 ) ;
 
@@ -55,8 +56,8 @@ CREATE TABLE IF NOT EXISTS enemy (
 
 CREATE TABLE IF NOT EXISTS battle_log (
 	battle_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(battle_id),
-	enemy_id INT NOT NULL, FOREIGN KEY(enemy_id) REFERENCES enemy,
-	player_id INT NOT NULL, FOREIGN KEY (player_id) REFERENCES player,
+	enemy_id INT NOT NULL, FOREIGN KEY(enemy_id) REFERENCES enemy(id),
+	player_id INT NOT NULL, FOREIGN KEY (player_id) REFERENCES player(id),
 	player_victorious BOOLEAN NOT NULL,
 	battle_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ;
@@ -71,7 +72,7 @@ CREATE TABLE IF NOT EXISTS quest (
 
 
 CREATE TABLE IF NOT EXISTS wearable_item (
-	wearable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(wearable_item_id),
+	id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 	wearable_item_name varchar(100) NOT NULL UNIQUE,
 	attack_bonus INT NOT NULL DEFAULT 0,
 	defense_bonus INT NOT NULL DEFAULT 0
@@ -79,15 +80,15 @@ CREATE TABLE IF NOT EXISTS wearable_item (
 
 
 CREATE TABLE IF NOT EXISTS players_wearable_items(
-	wearable_item_id INT NOT NULL, FOREIGN KEY (wearable_item_id) references wearable_item,
-	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	wearable_item_id INT NOT NULL, FOREIGN KEY (wearable_item_id) references wearable_item(id),
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player(id),
 	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (wearable_item_id, player_id)
 ) ;
 
 
 CREATE TABLE IF NOT EXISTS consumable_items (
-	consumable_item_id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (consumable_item_id),
+	id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (id),
 	damage INT NOT NULL DEFAULT 0,
 	mana_damage INT NOT NULL DEFAULT 0,
 	drop_chance INT NOT NULL DEFAULT 0,
@@ -96,8 +97,8 @@ CREATE TABLE IF NOT EXISTS consumable_items (
 
 
 CREATE TABLE IF NOT EXISTS players_consumable_items(
-	consumable_item_id INT NOT NULL, FOREIGN KEY (consumable_item_id) references consumable_items,
-	player_id INT NOT NULL, FOREIGN KEY (player_id) references player,
+	consumable_item_id INT NOT NULL, FOREIGN KEY (consumable_item_id) references consumable_items(id),
+	player_id INT NOT NULL, FOREIGN KEY (player_id) references player(id),
 	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (consumable_item_id, player_id)
 ) ;
