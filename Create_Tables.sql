@@ -16,13 +16,14 @@ CREATE TABLE IF NOT EXISTS user_login(
 	password_hash VARCHAR(20) NOT NULL,
 	PRIMARY KEY (id)
 );
+SELECT * FROM user_login;
 
 CREATE TABLE IF NOT EXISTS player (
-	mana INT NOT NULL,
-	health INT NOT NULL,
-	lvl INT NOT NULL,
-	attack INT NOT NULL,
-	defense INT NOT NULL,
+	mana INT NOT NULL DEFAULT 10,
+	health INT NOT NULL DEFAULT 10,
+	lvl INT NOT NULL DEFAULT 1,
+	attack INT NOT NULL DEFAULT 10,
+	defense INT NOT NULL DEFAULT 10,
 	player_name VARCHAR(100) NOT NULL UNIQUE,
 	id INT NOT NULL AUTO_INCREMENT,
 	user_id INT NOT NULL,
@@ -98,9 +99,9 @@ CREATE TABLE IF NOT EXISTS wearable_item (
 	id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 	wearable_item_name varchar(100) NOT NULL UNIQUE,
 	attack_bonus INT NOT NULL DEFAULT 0,
-	defense_bonus INT NOT NULL DEFAULT 0
+	defense_bonus INT NOT NULL DEFAULT 0,
+	rank INT NOT NULL DEFAULT 0
 );
-
 
 CREATE TABLE IF NOT EXISTS players_wearable_items(
 	wearable_item_id INT NOT NULL,
@@ -138,6 +139,5 @@ ALTER TABLE players_consumable_items
 ALTER TABLE players_consumable_items 
 	ADD CONSTRAINT consumable_item_id_ref_consumable_item 
 	FOREIGN KEY (consumable_item_id) REFERENCES consumable_items(id);
-
 
 
