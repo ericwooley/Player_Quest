@@ -10,8 +10,6 @@ DROP TABLE IF EXISTS players_wearable_items;
 DROP TABLE IF EXISTS consumable_items;
 DROP TABLE IF EXISTS players_consumable_items;
 
-
-
 CREATE TABLE IF NOT EXISTS user_login(
 	id INT NOT NULL AUTO_INCREMENT,
 	username VARCHAR(100) NOT NULL UNIQUE,
