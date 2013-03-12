@@ -1,0 +1,8 @@
+// Rename this file to config.json once you have filled out the info.
+{
+    "host": "Kirby.cs.sonoma.edu",
+    "user": "",
+    "passwd": "",
+    "db": "Player_Quest",
+    "user_name": ""
+}
