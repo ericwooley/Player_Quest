@@ -140,4 +140,25 @@ ALTER TABLE players_consumable_items
 	ADD CONSTRAINT consumable_item_id_ref_consumable_item 
 	FOREIGN KEY (consumable_item_id) REFERENCES consumable_items(id);
 
+CREATE TABLE IF NOT EXISTS spells(
+	id INT NOT NULL AUTO_INCREMENT, 
+	spell_name VARCHAR(100) NOT NULL UNIQUE,
+	damage INT NOT NULL DEFAULT 0,
+	effect VARCHAR(100) NOT NULL,
+	rank INT NOT NULL DEFAULT 0,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE IF NOT EXISTS players_spells(
+	spell_id INT NOT NULL,
+	player_id INT NOT NULL,
+	acquire_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (spell_id, player_id)
+);
+ALTER TABLE players_spells
+	ADD CONSTRAINT player_id_ref_player 
+	FOREIGN KEY (player_id) REFERENCES player(id);
+ALTER TABLE players_spells 
+	ADD CONSTRAINT spell_id_ref_spell 
+	FOREIGN KEY (spell_id) REFERENCES spells(id);
 
