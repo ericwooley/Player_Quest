@@ -41,7 +41,7 @@ for i in range(1,100):
         it = random.choice(spell_type)
         name = pre['name'] + " spell of " + it['name']
         spell['name'] = name
-        spell['attack'] = (pre['atk'] + it['atk']) * random.randint(1, 5)
+        spell['attack'] = (pre['atk'] * it['atk']) * random.randint(1, 5)
         spell['effect'] = it['effect']
         name = name.title();
         wi[name] = spell

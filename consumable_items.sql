@@ -5,3 +5,5 @@ INSERT INTO
 	(-10, -10, 10, "water"),
 	(-10, -5, 5, "Milk"),
 	(0, 40, 1, "LSD");
+
+select * from consumable_items;

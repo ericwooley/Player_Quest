@@ -1,0 +1,54 @@
+id,spell_name,damage,effect,rank
+85,"Unweildable spell of Ice",168,"Ice Burn",168
+84,"Crushing spell of Damage",810,"Double Damage",810
+83,"Heavy spell of Healing",-240,Heal,240
+82,"Unusual spell of Ice",35,"Ice Burn",35
+81,"Unusual spell of Healing",-75,Heal,75
+80,"Smashing spell of Water",225,Drown,225
+79,"Crushing spell of Fire",540,"Fire Burn",540
+78,"Flying spell of Lightning",75,Paralyze,75
+77,"Unusual spell of Tremendous Gas",50,"Smell Bad",50
+76,"Flying spell of Tremendous Gas",225,"Smell Bad",225
+75,"Heavy spell of Fire",160,"Fire Burn",160
+74,"Crushing spell of Lightning",360,Paralyze,360
+73,"Smashing spell of Healing",-675,Heal,675
+72,"Heavy spell of Damage",300,"Double Damage",300
+71,"Crushing spell of Water",270,Drown,270
+70,"Crushing spell of Healing",-540,Heal,540
+69,"Heavy spell of Tremendous Gas",100,"Smell Bad",100
+68,"Ragged spell of Ice",84,"Ice Burn",84
+67,"Ragged spell of Tremendous Gas",45,"Smell Bad",45
+66,"Flying spell of Water",75,Drown,75
+65,"Unbreakable spell of Lightning",250,Paralyze,250
+64,"Ragged spell of Lightning",30,Paralyze,30
+63,"Unusual spell of Damage",375,"Double Damage",375
+62,"Smashing spell of Ice",105,"Ice Burn",105
+61,"Heavy spell of Regeneration",-48,Regeneration,48
+60,"Unweildable spell of Water",180,Drown,180
+59,"Smashing spell of Regeneration",-90,Regeneration,90
+58,"Flying spell of Fire",300,"Fire Burn",300
+57,"Unweildable spell of Tremendous Gas",60,"Smell Bad",60
+56,"Heavy spell of Lightning",80,Paralyze,80
+55,"Flying spell of Regeneration",-225,Regeneration,225
+54,"Smashing spell of Damage",900,"Double Damage",900
+53,"Unbreakable spell of Damage",150,"Double Damage",150
+52,"Flying spell of Healing",-675,Heal,675
+51,"Smashing spell of Fire",150,"Fire Burn",150
+86,"Crushing spell of Ice",378,"Ice Burn",378
+87,"Crushing spell of Tremendous Gas",360,"Smell Bad",360
+88,"Ragged spell of Healing",-45,Heal,45
+89,"Unbreakable spell of Water",250,Drown,250
+90,"Flying spell of Ice",105,"Ice Burn",105
+91,"Unweildable spell of Healing",-720,Heal,720
+92,"Unusual spell of Regeneration",-75,Regeneration,75
+93,"Flying spell of Damage",900,"Double Damage",900
+94,"Unweildable spell of Fire",240,"Fire Burn",240
+95,"Unbreakable spell of Regeneration",-120,Regeneration,120
+96,"Ragged spell of Damage",90,"Double Damage",90
+97,"Heavy spell of Ice",28,"Ice Burn",28
+98,"Unusual spell of Fire",100,"Fire Burn",100
+99,"Ragged spell of Water",75,Drown,75
+100,"Unbreakable spell of Fire",100,"Fire Burn",100
+101,"Unusual spell of Lightning",50,Paralyze,50
+102,"Unweildable spell of Damage",180,"Double Damage",180
+103,"Ragged spell of Fire",120,"Fire Burn",120

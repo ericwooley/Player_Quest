@@ -1,0 +1,1001 @@
+id,wearable_item_name,attack_bonus,defense_bonus,rank
+4390,"Unbreakable Helmet of Damage",75,21,1575
+4389,"Smashing BreastPlate of Fire",125,16,2000
+4388,"Smashing Wand of Healing",0,2,2
+4387,"Decorative Shoulder of Knowledge",24,48,1152
+4384,"Unusual Sword of Water",10,80,800
+4385,"Unusual Soul Stone of Regeneration",8,28,224
+4386,"Unweildable Leggings of Healing",-3,4,12
+4383,"Smashing Wand of Mathamatics",51,10,510
+4382,"Ragged Wand of Damage",72,6,432
+4381,"Ragged Staff of Water",40,48,1920
+4379,"Flying Sword of Doubt",80,24,1920
+4380,"Heavy Leggings of Healing",-44,80,3520
+4378,"Unweildable Gloves of Water",51,55,2805
+4376,"Ragged Helmet of Doubt",16,12,192
+4377,"Unweildable Shoulder of Depression",52,6,312
+4375,"Heavy Soul Stone of Knowledge",42,75,3150
+4374,"Unusual Helmet of Knowledge",75,48,3600
+4373,"Crushing Gloves of Knowledge",140,60,8400
+4372,"Flying Helmet of Doubt",32,6,192
+4370,"Unweildable Wand of Light",51,44,2244
+4371,"Heavy Dagger of Ice",55,100,5500
+4368,"Heavy Axe of Knowledge",70,125,8750
+4369,"Smashing Dagger of Damage",90,4,360
+4367,"Ragged Bow of Knowledge",26,36,936
+4366,"Decorative Axe of Regeneration",-4,6,24
+4365,"Flying Staff of Damage",150,12,1800
+4364,"Decorative Sword of Ice",18,7,126
+4363,"Smashing Leggings of Mathamatics",85,8,680
+4362,"Flying Boots of Tremendous Gas",80,40,3200
+4361,"Decorative Axe of Ice",18,21,378
+4360,"Ragged Bow of Depression",12,15,180
+4359,"Ragged Axe of Knowledge",65,60,3900
+4358,"Smashing Bow of Doubt",64,10,640
+4357,"Unbreakable Boots of Regeneration",7,84,588
+4356,"Smashing Boots of Damage",60,6,360
+4355,"Crushing Bracers of Damage",99,6,594
+4353,"Ragged Boots of Mathamatics",15,3,45
+4354,"Unweildable Gloves of Regeneration",18,10,180
+4351,"Unusual Helmet of Regeneration",6,7,42
+4352,"Decorative BreastPlate of Water",14,36,504
+4350,"Flying Dagger of Tremendous Gas",20,30,600
+4349,"Unbreakable Sword of Fire",100,46,4600
+4348,"Unusual Bracers of Tremendous Gas",40,22,880
+4347,"Unbreakable Bracers of Regeneration",28,63,1764
+4345,"Unbreakable Axe of Healing",-5,21,105
+4346,"Unusual Sword of Mathamatics",35,21,735
+4344,"Unweildable Sword of Doubt",52,8,416
+4343,"Flying Leggings of Knowledge",50,60,3000
+4341,"Unusual Bow of Light",10,16,160
+4342,"Heavy Gloves of Damage",76,80,6080
+4339,"Heavy Boots of Ice",22,20,440
+4340,"Crushing Bow of Healing",9,6,54
+4337,"Flying Leggings of Healing",0,12,12
+4338,"Unweildable BreastPlate of Fire",110,4,440
+4336,"Crushing BreastPlate of Light",115,36,4140
+4334,"Flying Bracers of Fire",25,24,600
+4335,"Unusual Leggings of Depression",24,14,336
+4332,"Heavy Bracers of Healing",-22,16,352
+4333,"Ragged Gloves of Tremendous Gas",16,14,224
+4331,"Heavy Gloves of Doubt",10,80,800
+4330,"Unweildable Leggings of Regeneration",9,4,36
+4327,"Unusual Boots of Healing",-20,7,140
+4328,"Crushing Staff of Ice",50,35,1750
+4329,"Flying Leggings of Doubt",80,24,1920
+4326,"Flying Gloves of Tremendous Gas",60,30,1800
+4325,"Smashing Leggings of Regeneration",12,4,48
+4323,"Heavy Dagger of Damage",95,16,1520
+4324,"Unweildable Gloves of Mathamatics",70,4,280
+4321,"Smashing Shoulder of Tremendous Gas",40,24,960
+4322,"Decorative Staff of Regeneration",-3,15,45
+4320,"Unbreakable Leggings of Doubt",22,63,1386
+4319,"Unusual Axe of Water",10,48,480
+4318,"Smashing Bracers of Knowledge",75,44,3300
+4316,"Decorative Bracers of Knowledge",48,12,576
+4317,"Heavy Axe of Depression",10,80,800
+4315,"Decorative Gloves of Doubt",12,9,108
+4313,"Unweildable BreastPlate of Water",68,55,3740
+4314,"Unweildable Boots of Damage",108,10,1080
+4310,"Decorative Boots of Ice",18,7,126
+4311,"Decorative Wand of Doubt",12,6,72
+4312,"Smashing Soul Stone of Light",20,55,1100
+4308,"Unbreakable Axe of Fire",40,115,4600
+4309,"Crushing Sword of Doubt",38,9,342
+4307,"Unbreakable BreastPlate of Fire",40,115,4600
+4306,"Decorative Staff of Knowledge",48,24,1152
+4304,"Unusual Helmet of Fire",75,18,1350
+4305,"Flying Soul Stone of Knowledge",75,75,5625
+4303,"Heavy Soul Stone of Ice",33,40,1320
+4302,"Smashing Leggings of Fire",100,8,800
+4301,"Ragged Bracers of Depression",4,3,12
+4300,"Smashing BreastPlate of Healing",0,4,4
+4299,"Heavy Sword of Regeneration",1,80,80
+4298,"Flying Sword of Tremendous Gas",100,40,4000
+4296,"Ragged BreastPlate of Depression",16,15,240
+4297,"Heavy Boots of Tremendous Gas",9,60,540
+4294,"Smashing Leggings of Depression",32,4,128
+4295,"Flying Bow of Doubt",48,30,1440
+4293,"Unbreakable Axe of Tremendous Gas",15,50,750
+4291,"Decorative Wand of Ice",27,28,756
+4292,"Flying Soul Stone of Tremendous Gas",40,40,1600
+4290,"Smashing Soul Stone of Damage",30,8,240
+4289,"Unweildable Bow of Depression",52,10,520
+4288,"Unweildable Helmet of Fire",44,12,528
+4286,"Crushing Sword of Tremendous Gas",69,35,2415
+4287,"Heavy Sword of Fire",14,54,756
+4285,"Smashing Gloves of Depression",48,6,288
+4283,"Heavy Staff of Healing",-55,32,1760
+4284,"Unbreakable Helmet of Light",75,150,11250
+4282,"Unweildable Dagger of Healing",-3,2,6
+4280,"Flying Leggings of Tremendous Gas",80,50,4000
+4281,"Decorative Gloves of Damage",85,3,255
+4277,"Smashing Bracers of Mathamatics",17,8,136
+4278,"Smashing Helmet of Depression",16,8,128
+4279,"Unbreakable Bow of Light",45,60,2700
+4275,"Heavy Leggings of Tremendous Gas",36,40,1440
+4276,"Ragged Bow of Fire",52,5,260
+4274,"Smashing Bracers of Water",20,22,440
+4273,"Decorative BreastPlate of Depression",9,6,54
+4272,"Flying Bow of Knowledge",125,60,7500
+4271,"Decorative BreastPlate of Fire",48,25,1200
+4270,"Ragged BreastPlate of Regeneration",0,6,6
+4267,"Ragged Soul Stone of Water",32,12,384
+4268,"Unweildable Staff of Ice",95,24,2280
+4269,"Crushing Soul Stone of Light",92,60,5520
+4265,"Crushing Gloves of Tremendous Gas",115,28,3220
+4266,"Crushing Gloves of Water",69,48,3312
+4264,"Smashing Wand of Tremendous Gas",40,6,240
+4262,"Crushing Helmet of Damage",132,9,1188
+4263,"Heavy Helmet of Water",27,25,675
+4259,"Unweildable Gloves of Knowledge",88,22,1936
+4260,"Crushing Bow of Water",23,60,1380
+4261,"Unusual Boots of Light",40,64,2560
+4257,"Flying Staff of Regeneration",48,18,864
+4258,"Heavy Wand of Damage",76,16,1216
+4256,"Heavy Leggings of Water",45,25,1125
+4255,"Ragged Bracers of Regeneration",0,12,12
+4254,"Heavy Leggings of Ice",11,40,440
+4252,"Unusual Boots of Ice",24,33,792
+4253,"Heavy Gloves of Regeneration",4,48,192
+4250,"Flying Gloves of Mathamatics",34,24,816
+4251,"Ragged BreastPlate of Water",8,12,96
+4249,"Unusual Gloves of Damage",60,21,1260
+4247,"Flying Leggings of Damage",30,30,900
+4248,"Smashing Sword of Fire",75,4,300
+4246,"Decorative Shoulder of Doubt",3,6,18
+4245,"Crushing Staff of Doubt",19,3,57
+4244,"Ragged Sword of Knowledge",39,36,1404
+4243,"Crushing Boots of Light",46,24,1104
+4242,"Decorative Boots of Tremendous Gas",14,7,98
+4241,"Smashing Leggings of Healing",0,8,8
+4240,"Unbreakable Gloves of Knowledge",80,120,9600
+4239,"Crushing Bracers of Light",46,60,2760
+4237,"Unbreakable Boots of Fire",40,69,2760
+4238,"Unbreakable Soul Stone of Water",15,120,1800
+4236,"Unusual Boots of Damage",40,35,1400
+4234,"Crushing Axe of Doubt",76,3,228
+4235,"Ragged Helmet of Tremendous Gas",8,7,56
+4233,"Smashing Helmet of Healing",0,4,4
+4232,"Crushing Dagger of Light",69,48,3312
+4230,"Flying Dagger of Damage",30,18,540
+4231,"Unusual Soul Stone of Tremendous Gas",40,22,880
+4229,"Crushing Bracers of Mathamatics",40,12,480
+4228,"Unusual Shoulder of Tremendous Gas",50,22,1100
+4225,"Flying Shoulder of Water",40,75,3000
+4226,"Flying Sword of Knowledge",125,30,3750
+4227,"Smashing Staff of Healing",0,6,6
+4224,"Unweildable Boots of Ice",38,12,456
+4223,"Decorative Shoulder of Tremendous Gas",14,21,294
+4221,"Decorative Dagger of Mathamatics",4,6,24
+4222,"Unusual Bracers of Regeneration",10,35,350
+4220,"Crushing Wand of Knowledge",140,24,3360
+4218,"Unusual Soul Stone of Light",50,64,3200
+4219,"Heavy Bracers of Light",27,25,675
+4217,"Ragged Dagger of Ice",50,14,700
+4216,"Unusual Shoulder of Regeneration",2,21,42
+4215,"Unbreakable Shoulder of Doubt",44,84,3696
+4214,"Ragged Staff of Fire",65,20,1300
+4212,"Ragged Bracers of Doubt",16,3,48
+4213,"Crushing BreastPlate of Doubt",19,12,228
+4211,"Ragged Wand of Regeneration",0,3,3
+4210,"Heavy BreastPlate of Healing",-11,48,528
+4208,"Unbreakable Bow of Fire",100,23,2300
+4209,"Decorative Axe of Doubt",3,12,36
+4207,"Unbreakable Gloves of Damage",25,21,525
+4205,"Heavy Staff of Regeneration",1,80,80
+4206,"Ragged BreastPlate of Damage",72,6,432
+4204,"Flying Staff of Healing",0,6,6
+4201,"Unusual Leggings of Regeneration",6,14,84
+4202,"Unusual Bow of Mathamatics",14,14,196
+4203,"Crushing Helmet of Light",46,36,1656
+4200,"Unweildable Boots of Knowledge",44,22,968
+4199,"Unusual Axe of Light",50,48,2400
+4197,"Unweildable Bracers of Mathamatics",42,10,420
+4198,"Decorative BreastPlate of Tremendous Gas",28,14,392
+4195,"Ragged Soul Stone of Tremendous Gas",24,35,840
+4196,"Ragged Shoulder of Tremendous Gas",16,14,224
+4194,"Unbreakable Axe of Knowledge",80,150,12000
+4193,"Crushing Shoulder of Fire",56,20,1120
+4192,"Crushing Staff of Light",46,12,552
+4191,"Unweildable Soul Stone of Water",17,33,561
+4190,"Smashing Axe of Tremendous Gas",100,12,1200
+4189,"Unbreakable Leggings of Depression",55,42,2310
+4186,"Smashing Axe of Doubt",80,2,160
+4187,"Heavy BreastPlate of Ice",55,20,1100
+4188,"Flying Axe of Damage",120,6,720
+4185,"Unweildable Sword of Depression",39,2,78
+4184,"Crushing Leggings of Knowledge",56,48,2688
+4183,"Unbreakable Shoulder of Water",15,120,1800
+4182,"Smashing Soul Stone of Doubt",64,8,512
+4181,"Heavy Helmet of Knowledge",42,25,1050
+4180,"Unbreakable Shoulder of Healing",-5,84,420
+4179,"Unbreakable Shoulder of Regeneration",28,21,588
+4178,"Unusual Bracers of Water",20,64,1280
+4176,"Unbreakable Leggings of Regeneration",28,84,2352
+4177,"Smashing Helmet of Water",20,11,220
+4175,"Decorative Leggings of Light",7,12,84
+4173,"Ragged Soul Stone of Mathamatics",20,12,240
+4174,"Flying Shoulder of Knowledge",50,75,3750
+4172,"Unbreakable Boots of Tremendous Gas",30,50,1500
+4171,"Heavy Bow of Damage",57,32,1824
+4170,"Flying Bow of Light",60,75,4500
+4169,"Ragged Boots of Fire",26,25,650
+4168,"Heavy Staff of Fire",70,54,3780
+4167,"Ragged Staff of Depression",8,15,120
+4165,"Unusual Shoulder of Mathamatics",28,28,784
+4166,"Unweildable Axe of Damage",81,2,162
+4164,"Unusual Leggings of Fire",60,45,2700
+4163,"Unweildable Staff of Water",51,22,1122
+4162,"Smashing Leggings of Doubt",32,4,128
+4161,"Unusual Boots of Water",40,16,640
+4159,"Smashing Boots of Regeneration",24,6,144
+4160,"Decorative Bow of Water",21,24,504
+4158,"Decorative Soul Stone of Healing",-65,9,585
+4157,"Ragged Axe of Healing",-60,3,180
+4156,"Smashing Dagger of Mathamatics",85,10,850
+4155,"Smashing Wand of Depression",32,6,192
+4154,"Flying Axe of Light",100,60,6000
+4152,"Unusual Staff of Ice",24,44,1056
+4153,"Ragged Leggings of Light",16,24,384
+4151,"Smashing Leggings of Tremendous Gas",100,18,1800
+4150,"Crushing Boots of Doubt",76,12,912
+4149,"Heavy Soul Stone of Mathamatics",18,32,576
+4146,"Decorative Axe of Healing",-52,3,156
+4147,"Smashing Boots of Water",20,55,1100
+4148,"Flying Boots of Mathamatics",68,24,1632
+4144,"Unbreakable Boots of Water",60,60,3600
+4145,"Decorative Bracers of Doubt",3,3,9
+4142,"Decorative Gloves of Fire",48,10,480
+4143,"Decorative Dagger of Light",21,48,1008
+4141,"Ragged Bow of Water",32,36,1152
+4140,"Crushing Leggings of Doubt",57,12,684
+4139,"Unbreakable Helmet of Doubt",44,42,1848
+4138,"Unweildable Bracers of Fire",88,20,1760
+4136,"Flying Dagger of Knowledge",100,15,1500
+4137,"Decorative Helmet of Depression",6,6,36
+4135,"Unbreakable BreastPlate of Ice",51,75,3825
+4133,"Decorative Wand of Water",35,24,840
+4134,"Unweildable Bow of Regeneration",36,10,360
+4132,"Crushing BreastPlate of Fire",112,15,1680
+4131,"Crushing Wand of Doubt",19,6,114
+4130,"Unweildable BreastPlate of Damage",27,6,162
+4129,"Crushing Helmet of Depression",76,12,912
+4128,"Crushing Boots of Damage",99,15,1485
+4127,"Decorative Leggings of Healing",-65,12,780
+4125,"Smashing Gloves of Doubt",64,4,256
+4126,"Smashing Staff of Doubt",32,10,320
+4124,"Unusual BreastPlate of Fire",30,9,270
+4123,"Decorative Bow of Tremendous Gas",14,28,392
+4121,"Unbreakable Dagger of Fire",40,92,3680
+4122,"Unweildable Sword of Healing",-15,4,60
+4119,"Unbreakable Shoulder of Ice",68,25,1700
+4120,"Smashing Staff of Ice",66,24,1584
+4118,"Unbreakable Staff of Fire",100,115,11500
+4117,"Ragged Dagger of Fire",26,5,130
+4116,"Ragged BreastPlate of Doubt",16,3,48
+4115,"Flying Shoulder of Light",100,30,3000
+4114,"Flying Staff of Knowledge",75,45,3375
+4113,"Decorative BreastPlate of Doubt",3,9,27
+4112,"Unbreakable Soul Stone of Ice",17,75,1275
+4110,"Decorative Bracers of Water",14,60,840
+4111,"Smashing Sword of Water",80,22,1760
+4108,"Ragged BreastPlate of Tremendous Gas",32,21,672
+4109,"Unweildable Gloves of Light",34,11,374
+4107,"Unbreakable BreastPlate of Light",30,120,3600
+4104,"Unbreakable Wand of Light",60,60,3600
+4105,"Unbreakable Leggings of Healing",-5,105,525
+4106,"Crushing Dagger of Ice",50,35,1750
+4103,"Smashing Shoulder of Damage",150,2,300
+4102,"Decorative Helmet of Damage",51,3,153
+4100,"Smashing Gloves of Mathamatics",68,6,408
+4101,"Decorative Wand of Fire",48,20,960
+4099,"Unbreakable Helmet of Healing",-10,42,420
+4098,"Flying Shoulder of Tremendous Gas",80,40,3200
+4096,"Crushing Staff of Regeneration",75,15,1125
+4097,"Unusual Staff of Tremendous Gas",40,44,1760
+4095,"Unweildable Helmet of Ice",76,18,1368
+4094,"Ragged Bracers of Tremendous Gas",40,7,280
+4093,"Unweildable Boots of Fire",110,20,2200
+4092,"Ragged Soul Stone of Regeneration",0,3,3
+4090,"Unbreakable Soul Stone of Fire",60,69,4140
+4091,"Unweildable Leggings of Mathamatics",56,8,448
+4089,"Crushing Axe of Fire",84,25,2100
+4088,"Unbreakable Gloves of Healing",-15,21,315
+4087,"Smashing Wand of Damage",90,8,720
+4086,"Unweildable Leggings of Light",68,22,1496
+4084,"Flying Leggings of Light",60,15,900
+4085,"Unweildable Helmet of Damage",27,8,216
+4081,"Flying BreastPlate of Fire",100,24,2400
+4082,"Heavy Bow of Ice",33,100,3300
+4083,"Heavy Axe of Light",9,100,900
+4078,"Heavy Axe of Regeneration",2,48,96
+4079,"Unbreakable Dagger of Water",15,120,1800
+4080,"Decorative Bow of Damage",85,12,1020
+4076,"Unweildable Bracers of Doubt",39,4,156
+4077,"Flying Bow of Regeneration",24,30,720
+4075,"Unbreakable Gloves of Regeneration",35,42,1470
+4073,"Unusual Bow of Knowledge",15,16,240
+4074,"Smashing Soul Stone of Regeneration",24,8,192
+4072,"Heavy Shoulder of Depression",15,80,1200
+4071,"Heavy Wand of Knowledge",42,125,5250
+4070,"Unbreakable Shoulder of Knowledge",20,90,1800
+4069,"Ragged Wand of Light",24,48,1152
+4068,"Heavy Sword of Light",9,25,225
+4067,"Heavy Boots of Knowledge",14,125,1750
+4065,"Decorative Sword of Water",35,48,1680
+4066,"Decorative Shoulder of Healing",-52,9,468
+4064,"Heavy Shoulder of Fire",70,72,5040
+4063,"Heavy BreastPlate of Knowledge",56,125,7000
+4062,"Decorative Axe of Fire",60,10,600
+4060,"Unweildable Staff of Knowledge",66,44,2904
+4061,"Unbreakable Staff of Damage",100,84,8400
+4058,"Flying Shoulder of Ice",110,50,5500
+4059,"Ragged Staff of Ice",20,35,700
+4057,"Crushing Shoulder of Damage",132,12,1584
+4056,"Crushing Axe of Knowledge",140,12,1680
+4053,"Heavy Bow of Regeneration",1,16,16
+4054,"Heavy Leggings of Doubt",10,32,320
+4055,"Heavy Helmet of Fire",42,18,756
+4051,"Smashing Bow of Fire",25,16,400
+4052,"Unbreakable Staff of Healing",-10,84,840
+4050,"Unusual BreastPlate of Depression",6,35,210
+4048,"Unweildable Sword of Water",17,55,935
+4049,"Decorative Helmet of Tremendous Gas",35,21,735
+4045,"Flying Staff of Fire",25,8,200
+4046,"Ragged Wand of Tremendous Gas",32,35,1120
+4047,"Flying Staff of Water",80,75,6000
+4044,"Crushing Soul Stone of Water",92,36,3312
+4042,"Unbreakable Leggings of Water",15,30,450
+4043,"Unweildable BreastPlate of Tremendous Gas",17,24,408
+4041,"Unweildable Staff of Tremendous Gas",17,24,408
+4040,"Unweildable Bow of Knowledge",22,11,242
+4038,"Decorative Helmet of Regeneration",-2,9,18
+4039,"Unusual Bracers of Doubt",18,35,630
+4037,"Unweildable Bracers of Tremendous Gas",17,12,204
+4036,"Unbreakable Dagger of Doubt",33,84,2772
+4034,"Flying Helmet of Damage",120,30,3600
+4035,"Unbreakable Wand of Knowledge",20,90,1800
+4031,"Heavy Axe of Mathamatics",24,64,1536
+4032,"Ragged Dagger of Depression",12,6,72
+4033,"Unusual Wand of Tremendous Gas",50,11,550
+4030,"Unbreakable BreastPlate of Water",30,150,4500
+4028,"Ragged Gloves of Mathamatics",10,12,120
+4029,"Decorative Leggings of Knowledge",48,36,1728
+4027,"Crushing Shoulder of Light",115,12,1380
+4026,"Unbreakable Shoulder of Tremendous Gas",60,25,1500
+4025,"Crushing Sword of Light",46,36,1656
+4024,"Smashing Shoulder of Mathamatics",51,2,102
+4023,"Unusual Gloves of Light",10,80,800
+4022,"Ragged Leggings of Regeneration",0,3,3
+4021,"Unbreakable Helmet of Water",75,60,4500
+4020,"Decorative Dagger of Damage",85,6,510
+4018,"Unusual Helmet of Doubt",30,21,630
+4019,"Heavy Shoulder of Tremendous Gas",27,40,1080
+4017,"Flying Boots of Regeneration",12,6,72
+4016,"Unweildable Soul Stone of Depression",65,6,390
+4015,"Crushing Axe of Depression",38,9,342
+4014,"Smashing Bow of Regeneration",24,10,240
+4013,"Decorative Wand of Tremendous Gas",7,21,147
+4012,"Unbreakable Soul Stone of Damage",125,84,10500
+4011,"Ragged Sword of Regeneration",0,6,6
+4010,"Smashing Bow of Damage",30,10,300
+4008,"Unusual BreastPlate of Water",30,48,1440
+4009,"Ragged Staff of Mathamatics",25,15,375
+4007,"Smashing Staff of Regeneration",60,8,480
+4006,"Decorative Leggings of Ice",45,7,315
+4005,"Flying Soul Stone of Water",80,30,2400
+4004,"Decorative Bracers of Healing",-13,6,78
+4002,"Unusual Shoulder of Water",20,64,1280
+4003,"Decorative Soul Stone of Light",28,36,1008
+4001,"Unusual Soul Stone of Water",40,80,3200
+4000,"Ragged Bow of Damage",36,3,108
+3999,"Heavy Axe of Fire",28,54,1512
+3998,"Crushing Boots of Mathamatics",100,6,600
+3997,"Unusual Leggings of Knowledge",45,16,720
+3996,"Decorative Bracers of Light",7,12,84
+3994,"Unbreakable Dagger of Tremendous Gas",75,50,3750
+3995,"Unusual Shoulder of Depression",24,14,336
+3993,"Unusual Shoulder of Damage",20,35,700
+3991,"Unweildable Soul Stone of Fire",66,12,792
+3992,"Ragged Gloves of Fire",39,20,780
+3990,"Flying Wand of Doubt",32,24,768
+3987,"Crushing Bracers of Fire",140,25,3500
+3988,"Heavy Helmet of Regeneration",1,64,64
+3989,"Decorative BreastPlate of Knowledge",48,36,1728
+3986,"Flying Wand of Regeneration",24,6,144
+3985,"Decorative Gloves of Water",35,48,1680
+3984,"Flying Wand of Light",80,45,3600
+3983,"Ragged Wand of Mathamatics",25,15,375
+3982,"Unweildable Dagger of Doubt",26,8,208
+3981,"Unweildable Dagger of Light",34,33,1122
+3980,"Unusual Dagger of Knowledge",75,16,1200
+3979,"Flying BreastPlate of Damage",150,24,3600
+3978,"Unusual Helmet of Light",30,64,1920
+3976,"Unusual Sword of Doubt",12,21,252
+3977,"Flying Boots of Light",80,75,6000
+3975,"Decorative Leggings of Damage",34,15,510
+3974,"Unbreakable Boots of Mathamatics",60,42,2520
+3972,"Unusual Leggings of Doubt",30,7,210
+3973,"Unweildable Helmet of Light",51,11,561
+3971,"Heavy Shoulder of Healing",-11,48,528
+3970,"Unbreakable Shoulder of Damage",125,21,2625
+3969,"Smashing Helmet of Ice",44,12,528
+3966,"Heavy Staff of Light",9,75,675
+3967,"Ragged Axe of Water",32,36,1152
+3968,"Unbreakable Dagger of Damage",100,105,10500
+3965,"Heavy Boots of Damage",19,48,912
+3963,"Unweildable Axe of Healing",-9,6,54
+3964,"Heavy Dagger of Light",18,100,1800
+3962,"Unweildable Soul Stone of Knowledge",22,33,726
+3961,"Heavy Bow of Mathamatics",18,64,1152
+3960,"Ragged Bow of Mathamatics",15,9,135
+3959,"Decorative BreastPlate of Regeneration",-5,3,15
+3957,"Unweildable Boots of Healing",-12,2,24
+3958,"Unusual Sword of Regeneration",6,21,126
+3956,"Crushing BreastPlate of Tremendous Gas",92,7,644
+3955,"Decorative Bracers of Fire",12,20,240
+3954,"Heavy Axe of Ice",11,80,880
+3953,"Unbreakable Staff of Water",45,60,2700
+3951,"Flying Gloves of Damage",120,30,3600
+3952,"Unbreakable Sword of Tremendous Gas",15,125,1875
+3949,"Flying Wand of Fire",75,16,1200
+3950,"Unbreakable Axe of Mathamatics",48,21,1008
+3948,"Unusual Dagger of Doubt",24,28,672
+3947,"Flying BreastPlate of Healing",0,18,18
+3945,"Heavy Sword of Doubt",10,64,640
+3946,"Unweildable Sword of Mathamatics",56,4,224
+3944,"Unbreakable Bracers of Depression",22,84,1848
+3943,"Unweildable Axe of Depression",52,2,104
+3942,"Unbreakable Soul Stone of Knowledge",80,30,2400
+3940,"Flying Dagger of Water",100,30,3000
+3941,"Unbreakable Axe of Depression",11,42,462
+3939,"Decorative Staff of Fire",48,20,960
+3937,"Heavy Bracers of Depression",10,80,800
+3938,"Unweildable Sword of Regeneration",36,4,144
+3936,"Decorative Gloves of Mathamatics",12,6,72
+3935,"Unbreakable Wand of Tremendous Gas",75,50,3750
+3934,"Unbreakable Sword of Damage",100,42,4200
+3933,"Heavy Bow of Water",27,125,3375
+3932,"Ragged Axe of Depression",16,3,48
+3931,"Unusual Leggings of Mathamatics",35,7,245
+3930,"Unweildable Bracers of Light",34,44,1496
+3928,"Heavy Wand of Regeneration",3,64,192
+3929,"Heavy Staff of Mathamatics",24,64,1536
+3926,"Unweildable Bow of Damage",81,2,162
+3927,"Crushing Shoulder of Knowledge",112,24,2688
+3924,"Decorative Leggings of Tremendous Gas",35,14,490
+3925,"Crushing BreastPlate of Mathamatics",100,15,1500
+3923,"Smashing Axe of Knowledge",50,22,1100
+3922,"Crushing Sword of Water",23,12,276
+3921,"Crushing BreastPlate of Depression",76,3,228
+3920,"Decorative Bow of Regeneration",-2,9,18
+3919,"Unweildable Staff of Healing",-3,6,18
+3918,"Unbreakable Leggings of Knowledge",80,150,12000
+3917,"Flying Axe of Mathamatics",34,18,612
+3916,"Smashing Helmet of Light",60,55,3300
+3915,"Unusual Helmet of Water",30,32,960
+3913,"Decorative BreastPlate of Damage",68,6,408
+3914,"Decorative Dagger of Regeneration",-1,15,15
+3911,"Smashing BreastPlate of Damage",150,2,300
+3912,"Smashing Bracers of Depression",16,2,32
+3908,"Unusual Leggings of Ice",60,22,1320
+3909,"Decorative Helmet of Ice",36,35,1260
+3910,"Ragged Bow of Regeneration",0,6,6
+3907,"Smashing Bow of Depression",64,8,512
+3906,"Heavy Gloves of Light",45,25,1125
+3904,"Smashing Helmet of Tremendous Gas",40,30,1200
+3905,"Decorative BreastPlate of Mathamatics",8,12,96
+3903,"Ragged Gloves of Water",40,12,480
+3902,"Crushing Staff of Mathamatics",40,9,360
+3901,"Smashing BreastPlate of Tremendous Gas",60,12,720
+3900,"Smashing Soul Stone of Knowledge",75,33,2475
+3899,"Heavy Staff of Depression",20,64,1280
+3897,"Decorative Helmet of Water",28,12,336
+3898,"Unweildable Soul Stone of Regeneration",9,8,72
+3895,"Flying Bracers of Healing",0,6,6
+3896,"Ragged Wand of Doubt",12,15,180
+3893,"Ragged Boots of Regeneration",0,12,12
+3894,"Ragged Leggings of Ice",40,28,1120
+3892,"Unweildable Boots of Doubt",39,2,78
+3891,"Unweildable Bracers of Regeneration",18,8,144
+3888,"Unbreakable Axe of Water",60,30,1800
+3889,"Flying Shoulder of Mathamatics",34,18,612
+3890,"Flying Soul Stone of Mathamatics",68,30,2040
+3886,"Crushing BreastPlate of Healing",15,3,45
+3887,"Unusual BreastPlate of Mathamatics",35,14,490
+3885,"Heavy Gloves of Fire",70,54,3780
+3884,"Unbreakable Bow of Knowledge",20,120,2400
+3881,"Unusual Dagger of Ice",48,22,1056
+3882,"Unusual Bow of Healing",-40,21,840
+3883,"Heavy Axe of Water",9,50,450
+3880,"Crushing Soul Stone of Knowledge",140,60,8400
+3878,"Crushing Dagger of Regeneration",15,6,90
+3879,"Unweildable Staff of Regeneration",18,6,108
+3877,"Decorative Soul Stone of Ice",36,14,504
+3874,"Unusual Staff of Healing",-20,7,140
+3875,"Ragged Shoulder of Regeneration",0,12,12
+3876,"Smashing Dagger of Regeneration",60,8,480
+3873,"Smashing Axe of Fire",50,4,200
+3872,"Smashing BreastPlate of Ice",88,24,2112
+3870,"Flying Helmet of Depression",80,18,1440
+3871,"Crushing Helmet of Regeneration",30,6,180
+3869,"Decorative Sword of Damage",17,3,51
+3868,"Flying Dagger of Fire",50,32,1600
+3867,"Flying BreastPlate of Regeneration",12,30,360
+3866,"Unusual Wand of Knowledge",75,64,4800
+3865,"Unbreakable Wand of Mathamatics",60,42,2520
+3864,"Flying Bow of Tremendous Gas",80,30,2400
+3862,"Flying Wand of Tremendous Gas",80,10,800
+3863,"Unweildable Gloves of Ice",76,18,1368
+3861,"Flying Bow of Mathamatics",17,12,204
+3859,"Unusual Sword of Light",50,64,3200
+3860,"Unweildable Shoulder of Ice",95,6,570
+3858,"Decorative Gloves of Regeneration",-5,12,60
+3857,"Unbreakable Soul Stone of Mathamatics",60,42,2520
+3854,"Flying Wand of Water",60,30,1800
+3855,"Unbreakable Sword of Regeneration",28,21,588
+3856,"Flying Helmet of Regeneration",12,18,216
+3853,"Unbreakable Gloves of Doubt",22,42,924
+3851,"Flying Boots of Knowledge",75,15,1125
+3852,"Unbreakable Shoulder of Depression",33,21,693
+3850,"Crushing Bow of Depression",76,6,456
+3849,"Decorative Leggings of Doubt",3,6,18
+3847,"Unusual Boots of Doubt",30,21,630
+3848,"Unbreakable Sword of Light",75,150,11250
+3846,"Unusual Bracers of Healing",-50,35,1750
+3845,"Decorative Boots of Healing",-26,9,234
+3844,"Flying Staff of Mathamatics",34,18,612
+3843,"Unbreakable Helmet of Ice",51,125,6375
+3842,"Unbreakable BreastPlate of Damage",75,105,7875
+3840,"Smashing BreastPlate of Knowledge",125,44,5500
+3841,"Unbreakable Boots of Light",30,150,4500
+3839,"Unbreakable Helmet of Depression",33,63,2079
+3838,"Unweildable Wand of Tremendous Gas",34,30,1020
+3836,"Heavy Soul Stone of Depression",10,16,160
+3837,"Crushing Bow of Mathamatics",100,12,1200
+3835,"Flying Wand of Ice",110,40,4400
+3834,"Unusual Boots of Fire",45,18,810
+3833,"Decorative Sword of Light",21,24,504
+3832,"Flying Sword of Mathamatics",51,12,612
+3830,"Unweildable Wand of Doubt",52,10,520
+3831,"Crushing Sword of Fire",112,10,1120
+3828,"Ragged Shoulder of Healing",-36,3,108
+3829,"Unweildable Helmet of Knowledge",110,33,3630
+3826,"Flying Bracers of Depression",80,30,2400
+3827,"Unusual Bow of Damage",80,28,2240
+3824,"Flying Soul Stone of Fire",125,40,5000
+3825,"Ragged Helmet of Water",24,24,576
+3823,"Crushing Wand of Ice",100,28,2800
+3822,"Smashing Bow of Knowledge",50,33,1650
+3820,"Ragged Helmet of Healing",-36,15,540
+3821,"Flying Axe of Tremendous Gas",40,20,800
+3818,"Flying Gloves of Fire",25,24,600
+3819,"Smashing Soul Stone of Water",100,22,2200
+3816,"Heavy BreastPlate of Fire",70,18,1260
+3817,"Unusual Dagger of Tremendous Gas",50,44,2200
+3814,"Unweildable Gloves of Doubt",26,4,104
+3815,"Unweildable Leggings of Fire",22,8,176
+3813,"Unbreakable Leggings of Light",75,60,4500
+3812,"Flying Bow of Depression",80,6,480
+3811,"Unusual Dagger of Regeneration",6,14,84
+3809,"Smashing Sword of Damage",90,2,180
+3810,"Unbreakable BreastPlate of Healing",-20,84,1680
+3806,"Ragged Bracers of Healing",-48,15,720
+3807,"Unweildable Dagger of Water",85,11,935
+3808,"Heavy Gloves of Water",9,100,900
+3803,"Flying Wand of Healing",0,18,18
+3804,"Decorative Boots of Light",21,60,1260
+3805,"Unbreakable Leggings of Mathamatics",12,21,252
+3801,"Unweildable Dagger of Depression",13,2,26
+3802,"Crushing Boots of Ice",125,35,4375
+3800,"Ragged Gloves of Knowledge",65,36,2340
+3798,"Unusual Shoulder of Light",50,80,4000
+3799,"Unbreakable Bracers of Fire",100,46,4600
+3795,"Flying Leggings of Fire",50,24,1200
+3796,"Crushing Bow of Fire",84,15,1260
+3797,"Crushing Bracers of Water",115,60,6900
+3794,"Unusual Gloves of Ice",12,11,132
+3793,"Heavy Soul Stone of Tremendous Gas",27,80,2160
+3792,"Unusual Gloves of Water",20,48,960
+3790,"Crushing Wand of Regeneration",75,6,450
+3791,"Smashing Axe of Ice",110,30,3300
+3789,"Heavy Gloves of Mathamatics",24,48,1152
+3788,"Heavy Bracers of Damage",95,16,1520
+3787,"Unweildable Gloves of Fire",66,4,264
+3786,"Heavy Boots of Depression",20,32,640
+3784,"Unusual Soul Stone of Damage",20,7,140
+3785,"Ragged BreastPlate of Mathamatics",25,15,375
+3782,"Unusual Helmet of Depression",6,14,84
+3783,"Decorative Staff of Mathamatics",20,3,60
+3779,"Unbreakable Bow of Regeneration",7,105,735
+3780,"Unweildable Shoulder of Fire",88,12,1056
+3781,"Unweildable Soul Stone of Mathamatics",56,2,112
+3778,"Crushing Soul Stone of Healing",9,6,54
+3776,"Smashing Dagger of Light",20,33,660
+3777,"Flying Helmet of Knowledge",50,75,3750
+3775,"Unbreakable Gloves of Mathamatics",48,105,5040
+3774,"Decorative Axe of Damage",68,12,816
+3773,"Unbreakable Boots of Depression",55,21,1155
+3771,"Decorative Boots of Fire",60,25,1500
+3772,"Ragged Axe of Tremendous Gas",24,28,672
+3770,"Unusual Gloves of Mathamatics",7,21,147
+3768,"Smashing Bracers of Tremendous Gas",40,12,480
+3769,"Unweildable Helmet of Doubt",39,4,156
+3767,"Ragged Staff of Regeneration",0,3,3
+3766,"Decorative Sword of Tremendous Gas",21,35,735
+3764,"Unusual Sword of Ice",12,33,396
+3765,"Ragged Helmet of Regeneration",0,12,12
+3763,"Heavy Soul Stone of Doubt",10,16,160
+3762,"Smashing Staff of Mathamatics",17,2,34
+3761,"Unbreakable Soul Stone of Regeneration",7,84,588
+3760,"Smashing Boots of Mathamatics",85,6,510
+3757,"Flying Gloves of Ice",110,30,3300
+3758,"Flying Gloves of Light",80,45,3600
+3759,"Unweildable Bow of Mathamatics",42,2,84
+3756,"Crushing Gloves of Healing",3,3,9
+3754,"Heavy Axe of Doubt",15,32,480
+3755,"Unweildable Staff of Light",17,33,561
+3753,"Flying Gloves of Depression",80,6,480
+3751,"Unweildable Gloves of Tremendous Gas",51,24,1224
+3752,"Unweildable Bracers of Ice",76,18,1368
+3749,"Heavy Dagger of Mathamatics",6,16,96
+3750,"Unweildable Helmet of Healing",-12,4,48
+3748,"Unusual Axe of Healing",-20,7,140
+3747,"Crushing Bow of Regeneration",15,12,180
+3746,"Smashing Staff of Damage",150,2,300
+3745,"Unbreakable Gloves of Water",45,30,1350
+3744,"Unusual Sword of Tremendous Gas",10,44,440
+3741,"Decorative Boots of Mathamatics",8,15,120
+3742,"Crushing Helmet of Tremendous Gas",69,35,2415
+3743,"Decorative Gloves of Knowledge",60,12,720
+3740,"Ragged Shoulder of Doubt",20,12,240
+3738,"Smashing Shoulder of Depression",48,4,192
+3739,"Flying BreastPlate of Doubt",48,24,1152
+3737,"Crushing Shoulder of Mathamatics",20,15,300
+3736,"Flying Boots of Depression",64,18,1152
+3734,"Unusual Dagger of Healing",-20,35,700
+3735,"Unbreakable Wand of Damage",100,63,6300
+3733,"Flying Soul Stone of Ice",88,30,2640
+3732,"Decorative Helmet of Knowledge",48,48,2304
+3730,"Flying Axe of Depression",16,12,192
+3731,"Decorative Boots of Regeneration",-4,9,36
+3729,"Crushing Axe of Ice",100,7,700
+3728,"Unbreakable Axe of Regeneration",28,105,2940
+3726,"Smashing Soul Stone of Depression",32,4,128
+3727,"Unusual Staff of Doubt",30,14,420
+3724,"Ragged Wand of Healing",-48,6,288
+3725,"Unweildable Bracers of Damage",108,6,648
+3723,"Unweildable Boots of Mathamatics",14,6,84
+3722,"Crushing Sword of Mathamatics",20,6,120
+3721,"Unusual Gloves of Regeneration",8,21,168
+3719,"Smashing Sword of Mathamatics",51,10,510
+3720,"Crushing Dagger of Mathamatics",80,15,1200
+3718,"Crushing Gloves of Damage",33,15,495
+3717,"Unbreakable Leggings of Damage",100,105,10500
+3716,"Ragged Bracers of Mathamatics",10,6,60
+3714,"Heavy BreastPlate of Depression",20,48,960
+3715,"Flying Staff of Ice",22,30,660
+3712,"Crushing Dagger of Tremendous Gas",46,35,1610
+3713,"Smashing Sword of Tremendous Gas",40,24,960
+3711,"Unbreakable Staff of Knowledge",60,60,3600
+3709,"Unweildable Axe of Regeneration",36,2,72
+3710,"Ragged Shoulder of Water",24,36,864
+3708,"Smashing Sword of Knowledge",25,11,275
+3707,"Unweildable Axe of Tremendous Gas",51,18,918
+3705,"Smashing Gloves of Damage",120,6,720
+3706,"Unbreakable Sword of Healing",-10,63,630
+3703,"Unweildable Bow of Healing",-6,4,24
+3704,"Flying Bow of Ice",66,20,1320
+3701,"Unbreakable Bow of Doubt",55,63,3465
+3702,"Heavy BreastPlate of Water",27,25,675
+3700,"Heavy Helmet of Healing",-22,32,704
+3699,"Heavy Dagger of Water",9,100,900
+3697,"Crushing Leggings of Mathamatics",20,3,60
+3698,"Unusual Axe of Regeneration",6,21,126
+3696,"Crushing Helmet of Mathamatics",60,6,360
+3694,"Heavy Shoulder of Knowledge",42,125,5250
+3695,"Unbreakable Helmet of Regeneration",35,105,3675
+3693,"Decorative Axe of Light",21,60,1260
+3691,"Decorative Boots of Doubt",6,12,72
+3692,"Ragged Wand of Ice",20,35,700
+3690,"Unbreakable Boots of Knowledge",20,120,2400
+3689,"Smashing Helmet of Fire",75,16,1200
+3688,"Unbreakable Boots of Damage",75,84,6300
+3685,"Unusual Staff of Fire",45,27,1215
+3686,"Crushing Helmet of Healing",6,6,36
+3687,"Unbreakable Soul Stone of Doubt",22,42,924
+3684,"Unbreakable Dagger of Regeneration",21,63,1323
+3683,"Ragged Sword of Ice",30,35,1050
+3681,"Ragged Gloves of Depression",4,15,60
+3682,"Unbreakable BreastPlate of Doubt",44,105,4620
+3680,"Decorative Axe of Knowledge",48,48,2304
+3679,"Smashing BreastPlate of Water",20,22,440
+3678,"Unweildable Bow of Tremendous Gas",68,18,1224
+3676,"Flying Dagger of Doubt",32,30,960
+3677,"Ragged Boots of Knowledge",52,36,1872
+3675,"Flying Bracers of Mathamatics",17,24,408
+3674,"Decorative Staff of Water",35,60,2100
+3673,"Unbreakable Gloves of Depression",22,63,1386
+3672,"Unweildable Bow of Fire",66,20,1320
+3670,"Heavy Boots of Light",27,125,3375
+3671,"Ragged Leggings of Tremendous Gas",32,35,1120
+3669,"Heavy Sword of Knowledge",28,125,3500
+3667,"Crushing Dagger of Water",115,36,4140
+3668,"Heavy Wand of Fire",14,36,504
+3665,"Unusual Axe of Ice",24,22,528
+3666,"Decorative Leggings of Water",7,60,420
+3664,"Crushing Sword of Damage",165,15,2475
+3662,"Unusual Sword of Damage",100,14,1400
+3663,"Flying Soul Stone of Light",60,30,1800
+3660,"Flying Helmet of Ice",44,50,2200
+3661,"Decorative Sword of Healing",-26,6,156
+3658,"Decorative Helmet of Fire",12,25,300
+3659,"Crushing Leggings of Depression",57,9,513
+3657,"Flying Bracers of Damage",60,24,1440
+3656,"Unbreakable BreastPlate of Mathamatics",60,63,3780
+3655,"Heavy BreastPlate of Mathamatics",6,48,288
+3653,"Heavy Dagger of Healing",-11,48,528
+3654,"Decorative Shoulder of Water",14,48,672
+3652,"Ragged Boots of Water",32,48,1536
+3651,"Crushing Dagger of Healing",15,3,45
+3650,"Unusual Bow of Tremendous Gas",20,22,440
+3648,"Ragged Axe of Mathamatics",10,3,30
+3649,"Decorative Wand of Damage",68,9,612
+3647,"Decorative Shoulder of Mathamatics",12,12,144
+3646,"Crushing Leggings of Damage",165,15,2475
+3645,"Unbreakable Soul Stone of Tremendous Gas",75,25,1875
+3644,"Heavy Bracers of Knowledge",70,50,3500
+3643,"Unusual Soul Stone of Depression",6,35,210
+3642,"Smashing Bow of Healing",0,8,8
+3641,"Ragged Leggings of Mathamatics",25,12,300
+3640,"Flying Helmet of Water",40,30,1200
+3639,"Unweildable Dagger of Fire",66,20,1320
+3638,"Unweildable Shoulder of Water",51,33,1683
+3636,"Smashing Helmet of Regeneration",24,2,48
+3637,"Crushing Bow of Knowledge",112,60,6720
+3635,"Decorative Wand of Mathamatics",20,12,240
+3634,"Unbreakable Axe of Damage",25,105,2625
+3632,"Unweildable Shoulder of Tremendous Gas",17,12,204
+3633,"Flying Boots of Doubt",48,6,288
+3630,"Decorative Boots of Damage",17,15,255
+3631,"Unusual Bracers of Ice",12,11,132
+3629,"Unbreakable Boots of Doubt",22,84,1848
+3628,"Unbreakable BreastPlate of Regeneration",35,84,2940
+3627,"Unweildable Axe of Doubt",65,10,650
+3626,"Unusual Bracers of Damage",20,28,560
+3625,"Unusual Soul Stone of Doubt",30,21,630
+3624,"Decorative Staff of Damage",68,15,1020
+3622,"Unweildable Gloves of Depression",52,10,520
+3623,"Flying Axe of Healing",0,12,12
+3621,"Unusual Gloves of Tremendous Gas",10,55,550
+3620,"Ragged Leggings of Healing",-36,3,108
+3619,"Heavy Soul Stone of Light",18,75,1350
+3618,"Unweildable BreastPlate of Mathamatics",28,8,224
+3616,"Unusual Leggings of Healing",-40,14,560
+3617,"Crushing Staff of Knowledge",84,36,3024
+3615,"Unweildable BreastPlate of Healing",-12,4,48
+3614,"Flying BreastPlate of Depression",80,24,1920
+3612,"Unbreakable Boots of Healing",-5,63,315
+3613,"Unusual Helmet of Healing",-30,14,420
+3611,"Unweildable Axe of Knowledge",88,33,2904
+3609,"Crushing Dagger of Depression",76,6,456
+3610,"Flying BreastPlate of Mathamatics",85,24,2040
+3608,"Smashing Sword of Depression",80,8,640
+3606,"Flying Axe of Regeneration",60,24,1440
+3607,"Heavy Leggings of Mathamatics",6,64,384
+3605,"Unweildable Axe of Ice",19,30,570
+3604,"Ragged Shoulder of Damage",54,12,648
+3603,"Crushing Wand of Healing",15,3,45
+3601,"Flying Wand of Knowledge",50,15,750
+3602,"Unbreakable Staff of Ice",17,75,1275
+3600,"Heavy BreastPlate of Light",9,125,1125
+3599,"Flying Sword of Regeneration",60,6,360
+3598,"Unweildable BreastPlate of Regeneration",45,6,270
+3596,"Unweildable Bracers of Healing",-9,8,72
+3597,"Decorative Sword of Doubt",6,3,18
+3595,"Ragged Wand of Depression",8,12,96
+3593,"Heavy Wand of Light",45,125,5625
+3594,"Heavy Bracers of Fire",42,90,3780
+3592,"Unusual Soul Stone of Fire",30,9,270
+3590,"Crushing Wand of Tremendous Gas",23,35,805
+3591,"Smashing Axe of Damage",150,8,1200
+3588,"Unbreakable Bracers of Tremendous Gas",75,25,1875
+3589,"Ragged Sword of Mathamatics",15,15,225
+3587,"Ragged Sword of Light",8,24,192
+3586,"Unusual Gloves of Healing",-50,21,1050
+3585,"Flying Staff of Depression",80,6,480
+3584,"Ragged Bracers of Fire",26,10,260
+3583,"Unusual BreastPlate of Regeneration",4,14,56
+3582,"Ragged Bracers of Light",24,12,288
+3581,"Flying Dagger of Light",80,15,1200
+3580,"Unbreakable Leggings of Tremendous Gas",30,50,1500
+3579,"Unbreakable Shoulder of Mathamatics",12,21,252
+3577,"Ragged Gloves of Ice",50,35,1750
+3578,"Crushing BreastPlate of Ice",125,28,3500
+3575,"Unusual Wand of Doubt",12,35,420
+3576,"Decorative Soul Stone of Water",21,12,252
+3574,"Crushing Bow of Tremendous Gas",23,7,161
+3573,"Unbreakable Boots of Ice",85,50,4250
+3572,"Smashing Shoulder of Knowledge",100,44,4400
+3571,"Unusual Staff of Depression",30,35,1050
+3569,"Unusual Sword of Fire",60,36,2160
+3570,"Flying Soul Stone of Depression",16,30,480
+3568,"Smashing Boots of Knowledge",100,33,3300
+3567,"Ragged Dagger of Healing",-36,6,216
+3566,"Heavy Shoulder of Ice",11,20,220
+3565,"Unusual Boots of Tremendous Gas",50,55,2750
+3564,"Unusual Helmet of Tremendous Gas",50,55,2750
+3563,"Crushing Axe of Healing",12,15,180
+3562,"Ragged Staff of Healing",-60,12,720
+3561,"Smashing Staff of Fire",125,16,2000
+3559,"Ragged Staff of Tremendous Gas",16,14,224
+3560,"Unbreakable Dagger of Knowledge",80,90,7200
+3558,"Heavy Bracers of Doubt",15,32,480
+3557,"Smashing Helmet of Knowledge",100,55,5500
+3556,"Ragged Axe of Fire",13,25,325
+3555,"Ragged Dagger of Tremendous Gas",8,35,280
+3554,"Smashing Axe of Light",100,44,4400
+3553,"Unbreakable Helmet of Tremendous Gas",45,125,5625
+3552,"Decorative Boots of Depression",15,6,90
+3551,"Unbreakable Staff of Light",15,60,900
+3550,"Heavy Helmet of Doubt",15,32,480
+3549,"Heavy Wand of Healing",-55,64,3520
+3548,"Unweildable Boots of Tremendous Gas",85,6,510
+3547,"Flying Axe of Fire",100,32,3200
+3546,"Flying Sword of Fire",50,24,1200
+3545,"Crushing Gloves of Ice",25,28,700
+3544,"Crushing Soul Stone of Fire",112,25,2800
+3543,"Smashing Shoulder of Ice",66,24,1584
+3542,"Smashing BreastPlate of Depression",48,8,384
+3541,"Unusual Axe of Depression",6,21,126
+3539,"Unweildable Sword of Fire",44,16,704
+3540,"Crushing Soul Stone of Damage",132,12,1584
+3538,"Ragged Staff of Doubt",16,3,48
+3537,"Unusual Axe of Fire",60,18,1080
+3536,"Decorative Dagger of Fire",12,10,120
+3535,"Decorative Sword of Regeneration",-4,15,60
+3534,"Flying BreastPlate of Knowledge",25,75,1875
+3533,"Heavy Leggings of Depression",5,80,400
+3532,"Flying Leggings of Regeneration",36,18,648
+3531,"Unweildable Bracers of Water",17,11,187
+3530,"Unweildable Staff of Depression",13,8,104
+3529,"Unusual Shoulder of Knowledge",45,64,2880
+3528,"Heavy Leggings of Fire",70,36,2520
+3527,"Flying Soul Stone of Regeneration",36,24,864
+3526,"Ragged Soul Stone of Healing",-24,3,72
+3525,"Flying Sword of Light",40,15,600
+3524,"Decorative Bow of Depression",6,9,54
+3523,"Crushing Dagger of Damage",99,15,1485
+3522,"Unusual Shoulder of Doubt",24,35,840
+3521,"Unbreakable Gloves of Tremendous Gas",15,25,375
+3520,"Unusual Dagger of Mathamatics",28,21,588
+3519,"Smashing Leggings of Damage",150,10,1500
+3518,"Flying Gloves of Regeneration",12,24,288
+3517,"Heavy Helmet of Depression",25,48,1200
+3515,"Flying Bow of Fire",50,8,400
+3516,"Unweildable Shoulder of Light",85,33,2805
+3514,"Crushing Soul Stone of Doubt",76,15,1140
+3513,"Unweildable Boots of Regeneration",36,4,144
+3512,"Flying Wand of Mathamatics",34,30,1020
+3510,"Flying Staff of Light",80,30,2400
+3511,"Flying BreastPlate of Light",100,60,6000
+3508,"Unbreakable Shoulder of Light",45,150,6750
+3509,"Unusual Axe of Damage",80,28,2240
+3507,"Smashing Soul Stone of Tremendous Gas",60,18,1080
+3506,"Unbreakable Axe of Ice",51,25,1275
+3505,"Heavy Boots of Mathamatics",6,32,192
+3504,"Unbreakable Axe of Doubt",33,63,2079
+3502,"Flying Sword of Depression",32,30,960
+3503,"Flying Dagger of Regeneration",24,12,288
+3501,"Smashing Leggings of Water",100,55,5500
+3500,"Crushing Staff of Depression",76,15,1140
+3499,"Decorative Gloves of Depression",6,9,54
+3497,"Ragged Dagger of Doubt",4,3,12
+3498,"Unbreakable Bracers of Mathamatics",36,42,1512
+3495,"Smashing Bow of Tremendous Gas",40,30,1200
+3496,"Ragged Dagger of Light",32,36,1152
+3494,"Ragged Dagger of Damage",72,3,216
+3493,"Unweildable Helmet of Tremendous Gas",17,6,102
+3491,"Flying Sword of Ice",88,10,880
+3492,"Smashing Helmet of Doubt",32,4,128
+3490,"Decorative Bow of Doubt",15,6,90
+3489,"Unweildable Leggings of Doubt",52,6,312
+3488,"Crushing Staff of Water",46,36,1656
+3486,"Decorative Staff of Doubt",9,9,81
+3487,"Heavy Gloves of Tremendous Gas",9,80,720
+3484,"Heavy Bow of Healing",-33,32,1056
+3485,"Heavy BreastPlate of Tremendous Gas",45,100,4500
+3483,"Heavy Soul Stone of Damage",19,80,1520
+3482,"Unbreakable Helmet of Knowledge",80,150,12000
+3480,"Crushing Boots of Tremendous Gas",92,14,1288
+3481,"Unweildable Bow of Light",34,44,1496
+3479,"Heavy Shoulder of Doubt",10,16,160
+3477,"Unbreakable Leggings of Ice",51,25,1275
+3478,"Crushing Wand of Light",92,24,2208
+3476,"Unbreakable Bracers of Healing",-20,105,2100
+3475,"Smashing Shoulder of Doubt",64,8,512
+3474,"Smashing Shoulder of Healing",0,6,6
+3473,"Ragged Helmet of Mathamatics",20,15,300
+3471,"Decorative Sword of Fire",24,25,600
+3472,"Flying Bracers of Water",20,30,600
+3469,"Decorative Dagger of Depression",15,12,180
+3470,"Unusual Shoulder of Healing",-10,14,140
+3468,"Decorative Boots of Knowledge",12,24,288
+3467,"Unusual Bracers of Mathamatics",21,21,441
+3466,"Unbreakable Sword of Ice",51,50,2550
+3465,"Decorative Bow of Knowledge",12,60,720
+3464,"Smashing Gloves of Healing",0,6,6
+3463,"Ragged Sword of Doubt",12,12,144
+3462,"Unusual Wand of Healing",-40,28,1120
+3461,"Unweildable Leggings of Tremendous Gas",51,6,306
+3460,"Decorative Bracers of Mathamatics",12,12,144
+3459,"Decorative Bow of Ice",36,35,1260
+3458,"Crushing Bow of Light",115,24,2760
+3457,"Unusual Wand of Depression",12,35,420
+3456,"Unbreakable Bracers of Light",45,30,1350
+3455,"Smashing Wand of Ice",110,6,660
+3454,"Smashing Wand of Knowledge",100,11,1100
+3453,"Unweildable Boots of Light",51,33,1683
+3452,"Ragged Leggings of Fire",65,15,975
+3451,"Flying Shoulder of Depression",32,30,960
+3450,"Unweildable Boots of Depression",26,4,104
+3449,"Decorative Soul Stone of Fire",36,10,360
+3448,"Decorative Wand of Regeneration",-1,9,9
+3446,"Decorative Dagger of Water",28,24,672
+3447,"Unweildable Wand of Fire",44,12,528
+3445,"Heavy Gloves of Knowledge",28,100,2800
+3444,"Ragged Sword of Tremendous Gas",8,7,56
+3443,"Flying Bracers of Tremendous Gas",40,30,1200
+3441,"Ragged Gloves of Regeneration",0,3,3
+3442,"Unweildable Wand of Regeneration",36,4,144
+3440,"Unweildable Boots of Water",34,11,374
+3439,"Ragged Dagger of Knowledge",65,48,3120
+3438,"Unusual Boots of Regeneration",10,21,210
+3437,"Unbreakable Wand of Water",30,90,2700
+3436,"Crushing Staff of Tremendous Gas",69,7,483
+3435,"Unweildable Soul Stone of Tremendous Gas",68,18,1224
+3434,"Flying Bow of Water",40,60,2400
+3433,"Ragged Shoulder of Light",32,12,384
+3432,"Unbreakable BreastPlate of Tremendous Gas",45,50,2250
+3431,"Smashing Bracers of Regeneration",36,6,216
+3430,"Smashing Gloves of Fire",100,4,400
+3429,"Crushing Axe of Tremendous Gas",115,21,2415
+3427,"Flying Leggings of Water",40,60,2400
+3428,"Heavy Boots of Water",45,50,2250
+3426,"Unweildable BreastPlate of Knowledge",88,44,3872
+3425,"Heavy Soul Stone of Healing",-33,64,2112
+3424,"Decorative Bracers of Regeneration",-4,12,48
+3423,"Unusual Soul Stone of Mathamatics",7,28,196
+3422,"Unusual Wand of Damage",20,21,420
+3421,"Crushing Soul Stone of Mathamatics",80,3,240
+3420,"Smashing BreastPlate of Mathamatics",51,10,510
+3419,"Unbreakable Bracers of Doubt",55,21,1155
+3418,"Heavy Dagger of Fire",70,72,5040
+3417,"Heavy Bracers of Mathamatics",30,80,2400
+3416,"Flying Sword of Water",80,60,4800
+3415,"Ragged Bracers of Damage",54,3,162
+3414,"Decorative Soul Stone of Mathamatics",8,9,72
+3413,"Unbreakable Bow of Healing",-20,21,420
+3412,"Crushing Soul Stone of Tremendous Gas",46,7,322
+3410,"Unusual Leggings of Water",50,32,1600
+3411,"Ragged Gloves of Healing",-24,12,288
+3409,"Crushing Leggings of Light",23,60,1380
+3408,"Ragged Sword of Depression",12,12,144
+3407,"Heavy Bow of Knowledge",28,50,1400
+3406,"Flying Helmet of Mathamatics",85,18,1530
+3404,"Heavy Staff of Water",36,25,900
+3405,"Decorative Bow of Fire",36,15,540
+3403,"Crushing Leggings of Healing",9,3,27
+3402,"Heavy Leggings of Regeneration",5,48,240
+3400,"Flying Sword of Damage",30,6,180
+3401,"Unbreakable Wand of Doubt",44,21,924
+3399,"Heavy Staff of Tremendous Gas",36,40,1440
+3398,"Decorative Shoulder of Damage",68,6,408
+3397,"Decorative Leggings of Fire",12,25,300
+3396,"Decorative Staff of Light",7,60,420
+3395,"Ragged Helmet of Fire",39,10,390
+3394,"Smashing Sword of Ice",88,18,1584
+3393,"Smashing Boots of Fire",125,20,2500
+3392,"Ragged Wand of Knowledge",26,24,624
+3391,"Unweildable Shoulder of Damage",81,8,648
